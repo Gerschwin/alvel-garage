@@ -2,7 +2,8 @@
   "intro": "How to read a Japanese auction sheet before you bid. Grades vary a little between auctions and inspectors, so always get the whole sheet translated. Even a grade 4.5 car can hide one serious fault.",
   "src": [
     "owner-auction",
-    "club-buying"
+    "club-buying",
+    "owner-auction-2"
   ],
   "overall": [
     [
@@ -34,12 +35,16 @@
       "Very poor, often with rust holes. Mostly parts cars."
     ],
     [
-      "RA",
-      "Minor accident damage, well repaired. Otherwise can be as good as a 4.5. Worth an inspection."
+      "1",
+      "Heavily modified: engine or gearbox swap, big turbo, auto-to-manual conversion, race prep. Not an indication of condition."
     ],
     [
-      "R",
-      "Accident repaired, which can mean anything from small to major. Not the same as a UK write-off. The notes and diagram show what was repaired."
+      "RA / R1 / A1",
+      "Minor accident damage, well repaired. Otherwise can be as good as a 4.5. Worth an inspection. These are all minor-repair grades at different auctions."
+    ],
+    [
+      "R / A / 0 / RS / R0",
+      "Accident repaired, which can mean anything from small to major. Not the same as a UK write-off. Repairs show as XX on the diagram, but some are only mentioned in the Japanese notes, so get those translated."
     ],
     [
       "*** / 0 / 無効 / blank",
@@ -62,9 +67,17 @@
     [
       "D / E",
       "Poor: cracked dash, sagging headlining, ripped or stained seats, missing trim. The big auctions rarely use these."
+    ],
+    [
+      "4 B B",
+      "Some auctions add a second letter for the body/exterior, e.g. overall 4, exterior B, interior B."
     ]
   ],
   "damage": [
+    [
+      "Numbers",
+      "Size or severity: 1 smallest. Most auctions use 1–3, some go to 4."
+    ],
     [
       "A",
       "Scratch or chip (A1 polishes out, A2 medium, A3 large: 10–50 cm or across panels)"
@@ -83,7 +96,7 @@
     ],
     [
       "W",
-      "Repaired or repainted (W1 good, W2 slight ripple, W3 poor: drips, mismatch, wrinkles)"
+      "Repaired or repainted (W1 good, W2 slight ripple, W3 poor: drips, mismatch, wrinkles). Inspectors sometimes mark W when unsure, so it may be invisible."
     ],
     [
       "Y",
@@ -91,7 +104,7 @@
     ],
     [
       "S",
-      "Rust (S1 fist-size, S2 larger)"
+      "Rust (S1 fist-size, S2 larger). S in the written notes can mean underbody rust. C on the wheel arches suggests a snowy-region car."
     ],
     [
       "C",
@@ -222,5 +235,10 @@
         "USS HAA Kobe, USS Fukuoka, USS Gunma, TAA Yokohama (JU Gifu on Saturdays is mostly dealer relists with high reserves)"
       ]
     ]
-  }
+  },
+  "tips_extra": [
+    "Factory recalls can be done free at a Toyota dealer in Japan before export. Ask your agent, as it's much easier than chasing them in the UK.",
+    "Rust isn't always on the sheet: even grade 4.5 cars can be rusty underneath. Ask for underbody photos.",
+    "Agents physically inspect at the big auctions: they run the engine, check the gearbox and A/C, and photograph underneath. Worth paying for."
+  ]
 }

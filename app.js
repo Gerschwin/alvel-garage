@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION = '0.3.0';
+const APP_VERSION = '0.3.1';
 const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);
@@ -162,7 +162,7 @@ const views = {
       <h2>Body diagram codes</h2><p class="note">A letter for the type of damage plus a number for size (1 small → 3 large).</p><div class="card">${tbl(A.damage, ['Code', 'Meaning'])}</div>
       <h2>Equipment abbreviations</h2><div class="card">${tbl(A.abbrev, ['Code', 'Meaning'])}</div>
       <h2>Cars listed more than once</h2><div class="card"><h3>Why it happens</h3><ul>${A.relisted.why.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>What to check</h3><ul>${A.relisted.check.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
-      <h2>Which auctions</h2><div class="card"><ul>${A.auctions.tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>${tbl(A.auctions.week, ['Day', 'Main auctions'])}</div>`;
+      <h2>Which auctions</h2><div class="card"><ul>${[...A.auctions.tips, ...(A.tips_extra || [])].map(x => `<li>${esc(x)}</li>`).join('')}</ul>${tbl(A.auctions.week, ['Day', 'Main auctions'])}</div>`;
   },
   grades() {
     const G = D.vehicles.grades, m = model();

@@ -238,5 +238,12 @@
     "title": "Goo-net – Vellfire model history and special editions (Japanese)",
     "url": "https://www.goo-net.com/catalog/TOYOTA/VELLFIRE/",
     "kind": "trade"
+  },
+  {
+    "id": "owner-auction-2",
+    "title": "Owner's notes – How to read a Japanese auction sheet (importer guide copy)",
+    "kind": "community",
+    "url": "",
+    "note": "Grade 1 = modified, body-condition letter, R-grade variants, rust and recall tips. Rewritten here."
   }
 ]
