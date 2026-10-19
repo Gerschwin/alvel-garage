@@ -26,13 +26,14 @@ Everything lives in `data/*.json`. The app only renders it.
 | `guides.json` | Step-by-step jobs |
 | `faults.json` | Known faults |
 | `buying.json` | Viewing checklist |
+| `resources.json` | Manuals & links page (official manuals, parts catalogues, fitting sheets, forums) |
 | `sources.json` | Every source the other files cite |
 
 Any entry can be limited with `"engine": ["2AZ-FE", …]` and/or `"drive": "FF" | "4WD"`. Every entry should carry:
 
 - `src`: source ids from `sources.json`
 - `conf`: one of
-  - `official`: from Toyota's own documents
+  - `official`: from Toyota's own manuals or website, or the part maker (e.g. DENSO plug tables)
   - `community`: owner or trade sources
   - `unverified`: general knowledge that still needs a source
 
@@ -44,7 +45,7 @@ When you change any file, bump `APP_VERSION` in `app.js` and `VERSION` in `sw.js
 
 ## Known gaps
 
-- **Service intervals:** Toyota Japan's maintenance booklet isn't online, so the intervals are marked unverified.
-- **Spark plugs, 12 V battery size, stud pattern:** not yet confirmed from a Toyota parts catalogue.
+- **Torque figures** (drain plug, calipers, suspension) and wiring diagrams are only in the paid Toyota repair manual (修理書). See Manuals & links.
+- **Stud pattern, oil filter number:** not yet confirmed from a Toyota parts catalogue.
 - **2008/05 – 2010/03 cars:** no online manual, so the paper glovebox manual is the check.
 - **Not yet in the app:** warning-light meanings, the jacking-point diagram, timing-chain/drive-belt info, and photos.

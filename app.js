@@ -1,6 +1,6 @@
 'use strict';
-const APP_VERSION = '0.1.0';
-const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'sources'];
+const APP_VERSION = '0.2.0';
+const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -28,7 +28,7 @@ function fitTags(x) {
   if (x.drive) t.push(x.drive);
   return t.map(s => `<span class="tag">${esc(s)}</span>`).join('');
 }
-const CONF = { official: 'Toyota manual', community: 'Owner-sourced', unverified: 'Unverified' };
+const CONF = { official: 'Official source', community: 'Owner-sourced', unverified: 'Unverified' };
 function meta(x) {
   const src = (x.src || []).map(id => D.sources.find(s => s.id === id)).filter(Boolean)
     .map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(shortSrc(s))}</a>`).join(', ');
@@ -56,9 +56,10 @@ const views = {
       ${tile('#/guides', 'DIY guides', 'Step-by-step jobs')}
       ${tile('#/faults', 'Known faults', 'Symptoms → causes → fixes')}
       ${tile('#/buying', 'Buying an import', 'Checklist for a viewing')}
+      ${tile('#/resources', 'Manuals & links', 'Diagrams, catalogues, forums')}
       ${tile('#/sources', 'Sources', 'Where every figure comes from')}
     </div>
-    <p class="foot">Green = from Toyota's own manual · amber = owner/trade sources · red = unverified, double-check before relying on it. Not affiliated with Toyota. v${APP_VERSION}</p>`;
+    <p class="foot">Green = official (Toyota's manuals and website, or DENSO for plugs) · amber = owner/trade sources · red = unverified, double-check before relying on it. Not affiliated with Toyota. v${APP_VERSION}</p>`;
   },
   specs() {
     return `<h1>Specs & fluids</h1>` + D.specs.groups.map(g => {
@@ -92,6 +93,8 @@ const views = {
         <div class="card"><h3>Tools</h3><ul>${g.tools.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
         ${g.parts.length ? `<h3>Parts</h3><ul>${g.parts.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}</div>
         <div class="card"><h3>Steps</h3><ol class="steps">${g.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol></div>
+        ${g.table ? `<div class="card"><h3>${esc(g.table.title)}</h3><table><tr>${g.table.cols.map(c => `<th>${esc(c)}</th>`).join('')}</tr>${g.table.rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>` : ''}
+        ${g.notes?.length ? `<div class="card"><h3>Notes</h3><ul>${g.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
         <p><a class="btn" href="#/mycar?task=${encodeURIComponent(guideTask(g.id))}">Log this job</a></p>`;
     }
     return `<h1>DIY guides</h1><p class="lead">Written from the owner's manual and owners' write-ups. Your safety is your responsibility: support the car properly, and if in doubt, use a garage.</p>` +
@@ -142,6 +145,10 @@ const views = {
         log.map(e => `<tr><td class="num">${esc(e.date)}</td><td>${esc(e.task)}${e.notes ? `<div class="note">${esc(e.notes)}</div>` : ''}${e.cost ? `<div class="note">£${esc(e.cost)}</div>` : ''}</td><td class="num">${e.miles ? fmtInt(e.miles) : ''}</td>
         <td><button class="btn ghost small" data-act="delLog" data-id="${esc(e.id)}" aria-label="Delete entry">✕</button></td></tr>`).join('') + `</table></div>` : '<p class="note">Nothing logged yet.</p>'}
       <p><button class="btn ghost" data-act="export">Export backup</button> <label class="btn ghost" style="display:inline-block;color:var(--accent);margin:0">Import backup<input id="imp" type="file" accept="application/json" hidden></label></p>`;
+  },
+  resources() {
+    return `<h1>Manuals & links</h1><p class="lead">${esc(D.resources.intro)}</p>` + D.resources.groups.map(g => `<h2>${esc(g.title)}</h2>` +
+      g.items.map(it => `<div class="card"><h3>${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.name)}</a>` : esc(it.name)}</h3><p class="val">${esc(it.what)}</p>${it.tip ? `<p class="note">Tip: ${esc(it.tip)}</p>` : ''}</div>`).join('')).join('');
   },
   sources() {
     return `<h1>Sources</h1><p class="lead">Every figure in the app links to one of these. Toyota's official manuals win wherever they disagree with anything else.</p>` +
@@ -197,6 +204,8 @@ function buildIndex() {
   D.guides.filter(applies).forEach(g => index.push({ t: g.title, s: 'Guide · ' + g.steps.join(' '), h: '#/guides/' + g.id }));
   D.faults.filter(applies).forEach(f => index.push({ t: f.title, s: 'Fault · ' + f.symptoms + ' ' + f.cause, h: '#/faults' }));
   D.schedule.items.filter(applies).forEach(i => index.push({ t: i.task, s: 'Service schedule', h: '#/service' }));
+  D.guides.filter(applies).forEach(g => g.table && g.table.rows.forEach(r => index.push({ t: `${g.table.title}: pin ${r[0]}`, s: r.slice(1).join(' · '), h: '#/guides/' + g.id })));
+  D.resources.groups.forEach(g => g.items.forEach(it => index.push({ t: it.name, s: 'Manuals & links · ' + it.what, h: '#/resources' })));
 }
 function searchView(q) {
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -211,7 +220,7 @@ function route() {
   const [name, id] = path.split('/');
   const v = views[name || 'home'] || views.home;
   $('#view').innerHTML = v(id, new URLSearchParams(qs || ''));
-  document.querySelectorAll('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === (name || 'home') || (a.dataset.tab === 'specs' && ['parts', 'fuses'].includes(name)) || (a.dataset.tab === 'guides' && name === 'faults')));
+  document.querySelectorAll('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === (name || 'home') || (a.dataset.tab === 'specs' && ['parts', 'fuses'].includes(name)) || (a.dataset.tab === 'guides' && ['faults', 'resources'].includes(name))));
   $('#q').value = '';
   window.scrollTo(0, 0);
 }

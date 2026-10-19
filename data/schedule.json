@@ -1,20 +1,206 @@
 {
-  "intro": "Toyota Japan's maintenance booklet isn't online, so this is a suggested UK-owner schedule. The fluids and capacities come from the owner's manual; the intervals are common practice and are marked unverified until checked against the Japanese メンテナンスノート. Use 'severe' if most of your driving is short trips, towing, or heavy loads.",
+  "intro": "Intervals marked 'Official source' come from Toyota Japan's maintenance pages (or DENSO for plugs). The rest are common practice. 'Severe' means Toyota's シビアコンディション: lots of rough roads, high annual mileage, or frequent hills. UK short-trip use is worth treating as severe too.",
   "items": [
-    { "task": "Engine oil", "normal": { "km": 15000, "months": 12 }, "severe": { "km": 7500, "months": 6 }, "note": "Many UK owners change it every 6,000 miles or yearly, whichever comes first.", "guide": "oil-change", "conf": "unverified" },
-    { "task": "Oil filter", "normal": { "km": 15000, "months": 12 }, "severe": { "km": 7500, "months": 6 }, "note": "Toyota Japan allows every second oil change. Changing it every time is cheap insurance.", "guide": "oil-change", "conf": "unverified" },
-    { "task": "Cabin filter", "normal": { "km": 15000, "months": 12 }, "conf": "unverified" },
-    { "task": "Air filter – inspect", "normal": { "km": 15000, "months": 12 }, "conf": "unverified" },
-    { "task": "Air filter – replace", "normal": { "km": 45000, "months": 36 }, "severe": { "km": 30000, "months": 24 }, "conf": "unverified" },
-    { "task": "Brake fluid", "normal": { "months": 24 }, "note": "Japan's shaken inspection cycle and normal UK garage practice.", "conf": "unverified" },
-    { "task": "Coolant (Super Long Life)", "normal": { "km": 160000, "months": 84 }, "note": "Toyota's usual Super LLC interval is 160,000 km for the first change, then every 80,000 km. On an import of unknown history, change it once and start counting.", "conf": "unverified" },
-    { "task": "Spark plugs (iridium)", "normal": { "km": 100000 }, "engine": ["2AZ-FE", "2AZ-FXE"], "conf": "unverified" },
-    { "task": "Spark plugs (iridium)", "normal": { "km": 100000 }, "engine": ["2GR-FE"], "note": "The rear bank needs the intake plenum off, so it's a bigger job.", "conf": "unverified" },
-    { "task": "CVT fluid", "engine": ["2AZ-FE"], "normal": { "km": 60000 }, "note": "Toyota says 'consult a dealer' and lists no interval. Japanese garages recommend changing it to prevent judder; plenty of cars reach 150,000 km never having had it changed. On a high-mileage car with old fluid, change it gradually (a drain & fill at a time).", "guide": "cvt-fluid", "conf": "community", "src": ["om-201209", "d1-cvt-judder", "minkara-cvt"] },
-    { "task": "Gearbox ATF WS", "engine": ["2GR-FE"], "normal": { "km": 80000 }, "note": "Sealed 'lifetime' fill. Owners do a drain & fill as preventive maintenance.", "conf": "unverified", "src": ["club-atf"] },
-    { "task": "Rear diff & transfer oil", "drive": "4WD", "normal": { "km": 60000, "months": 48 }, "conf": "unverified" },
-    { "task": "Sliding door runners – clean & lube", "normal": { "months": 12 }, "note": "Dry runners make the power doors labour and wear the cables.", "src": ["club-buying"], "conf": "community" },
-    { "task": "Smart key battery (CR1632)", "normal": { "months": 24 }, "note": "Or as soon as the key's range drops.", "guide": "key-battery", "conf": "unverified" },
-    { "task": "MOT", "normal": { "months": 12 }, "note": "A UK legal requirement once the car is 3 years old.", "src": ["gov-mot"], "conf": "official" }
+    {
+      "task": "Engine oil",
+      "normal": {
+        "km": 15000,
+        "months": 12
+      },
+      "severe": {
+        "km": 7500,
+        "months": 6
+      },
+      "note": "Toyota Japan's figure for non-turbo petrol cars. Many UK owners change it every 6,000 miles or yearly. Do check the dipstick monthly on a 2AZ (see Known faults).",
+      "guide": "oil-change",
+      "conf": "official",
+      "src": [
+        "toyota-jp-oil"
+      ]
+    },
+    {
+      "task": "Oil filter",
+      "normal": {
+        "km": 15000
+      },
+      "severe": {
+        "km": 7500
+      },
+      "note": "Same interval as the oil on non-turbo petrol cars.",
+      "guide": "oil-change",
+      "conf": "official",
+      "src": [
+        "toyota-jp-oil"
+      ]
+    },
+    {
+      "task": "Cabin filter",
+      "normal": {
+        "km": 15000,
+        "months": 12
+      },
+      "conf": "unverified"
+    },
+    {
+      "task": "Air filter",
+      "normal": {
+        "km": 50000
+      },
+      "severe": {
+        "km": 25000
+      },
+      "conf": "official",
+      "src": [
+        "toyota-jp-engineroom"
+      ]
+    },
+    {
+      "task": "Brake fluid",
+      "normal": {
+        "months": 24
+      },
+      "note": "Toyota Japan says every 2–3 years. 2 years is the safe end.",
+      "conf": "official",
+      "src": [
+        "toyota-jp-brakes"
+      ]
+    },
+    {
+      "task": "12 V battery",
+      "normal": {
+        "months": 30
+      },
+      "note": "Toyota Japan: about every 2–3 years, or when a tester says so. Weak batteries cause power-door and smart-key oddities.",
+      "src": [
+        "toyota-jp-battery"
+      ],
+      "conf": "official"
+    },
+    {
+      "task": "Drive belt – inspect",
+      "normal": {
+        "km": 15000,
+        "months": 12
+      },
+      "note": "Toyota sets no interval: inspect for cracks and glazing and replace when worn (checking it yearly is our suggestion). Squealing on cold starts or with the A/C on is the usual sign.",
+      "src": [
+        "toyota-jp-engineroom",
+        "capinetall"
+      ],
+      "conf": "community"
+    },
+    {
+      "task": "Coolant (Super Long Life)",
+      "normal": {
+        "km": 160000,
+        "months": 84
+      },
+      "note": "First change at 160,000 km or 7 years, then every 80,000 km or 4 years. On an import of unknown history, change it once and then use the 80,000 km / 4 year interval.",
+      "conf": "official",
+      "src": [
+        "toyota-jp-engineroom"
+      ]
+    },
+    {
+      "task": "Spark plugs (iridium)",
+      "normal": {
+        "km": 100000
+      },
+      "engine": [
+        "2AZ-FE",
+        "2AZ-FXE"
+      ],
+      "conf": "official",
+      "src": [
+        "denso-plug-life",
+        "toyota-jp-engineroom"
+      ],
+      "note": "DENSO gives up to 100,000 km for long-life types (the genuine SK and Iridium Tough VK plugs). Cheaper 'Iridium Power' (IK) plugs are shorter-life. Toyota says inspect and replace when worn."
+    },
+    {
+      "task": "Spark plugs (iridium)",
+      "normal": {
+        "km": 100000
+      },
+      "engine": [
+        "2GR-FE"
+      ],
+      "note": "The rear bank needs the intake plenum off, so it's a bigger job.",
+      "conf": "official",
+      "src": [
+        "denso-plug-life"
+      ]
+    },
+    {
+      "task": "CVT fluid",
+      "engine": [
+        "2AZ-FE"
+      ],
+      "normal": {
+        "km": 60000
+      },
+      "note": "Toyota says 'consult a dealer' and lists no interval. Japanese garages recommend changing it to prevent judder; plenty of cars reach 150,000 km never having had it changed. On a high-mileage car with old fluid, change it gradually (a drain & fill at a time).",
+      "guide": "cvt-fluid",
+      "conf": "community",
+      "src": [
+        "om-201209",
+        "d1-cvt-judder",
+        "minkara-cvt"
+      ]
+    },
+    {
+      "task": "Gearbox ATF WS",
+      "engine": [
+        "2GR-FE"
+      ],
+      "normal": {
+        "km": 80000
+      },
+      "note": "Sealed 'lifetime' fill. Owners do a drain & fill as preventive maintenance.",
+      "conf": "unverified",
+      "src": [
+        "club-atf"
+      ]
+    },
+    {
+      "task": "Rear diff & transfer oil",
+      "drive": "4WD",
+      "normal": {
+        "km": 60000,
+        "months": 48
+      },
+      "conf": "unverified"
+    },
+    {
+      "task": "Sliding door runners – clean & lube",
+      "normal": {
+        "months": 12
+      },
+      "note": "Dry runners make the power doors labour and wear the cables.",
+      "src": [
+        "club-buying"
+      ],
+      "conf": "community"
+    },
+    {
+      "task": "Smart key battery (CR1632)",
+      "normal": {
+        "months": 24
+      },
+      "note": "Or as soon as the key's range drops.",
+      "guide": "key-battery",
+      "conf": "unverified"
+    },
+    {
+      "task": "MOT",
+      "normal": {
+        "months": 12
+      },
+      "note": "A UK legal requirement once the car is 3 years old.",
+      "src": [
+        "gov-mot"
+      ],
+      "conf": "official"
+    }
   ]
 }

@@ -1,0 +1,118 @@
+{
+  "intro": "Where to find more detail. Toyota's workshop manual (修理書) and wiring diagrams (配線図) aren't legitimately free online. Free download sites that claim to have them are unofficial copies of unknown quality, and some carry malware, so they aren't listed here.",
+  "groups": [
+    {
+      "title": "Official & free",
+      "items": [
+        {
+          "name": "Toyota Japan owner's manuals (2010–2014 editions, PDF)",
+          "url": "https://manual.toyota.jp/alphard/",
+          "what": "Specs, fluids, fuses, controls, warning lights. Japanese.",
+          "tip": "Use Chrome's Translate on the page, or upload the PDF to Google Translate's Documents tab. The 2010/04 edition is alphard_201004.pdf and the 2012/09 edition is alphard_201209.pdf."
+        },
+        {
+          "name": "Toyota Japan maintenance guide",
+          "url": "https://toyota.jp/after_service/tenken/driver/maintenance/",
+          "what": "Toyota's own replacement intervals for oil, filters, coolant, brakes, battery and tyres."
+        },
+        {
+          "name": "DENSO spark plug fitment table",
+          "url": "https://am.denso.com/search/plug/4wplug/4wjp_data.cgi?name=%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%89&filename=maker6jpn.txt&m=5",
+          "what": "Genuine and DENSO plug numbers by build date."
+        }
+      ]
+    },
+    {
+      "title": "Parts catalogues with exploded diagrams",
+      "items": [
+        {
+          "name": "Partsouq",
+          "url": "https://partsouq.com/en/catalog/toyota",
+          "what": "Toyota's genuine parts catalogue (EPC) with diagrams for every group: engine, brakes, body, electrics.",
+          "tip": "Enter the full frame number (e.g. ANH20-8123456) for exact-fit part numbers."
+        },
+        {
+          "name": "Amayama",
+          "url": "https://www.amayama.com/en/genuine-catalogs/toyota",
+          "what": "The same Toyota EPC diagrams, shipped from Japan. Good for JDM-only parts."
+        },
+        {
+          "name": "Megazip",
+          "url": "https://www.megazip.net/parts/toyota",
+          "what": "Another view of the Toyota EPC, also ships from Japan."
+        }
+      ]
+    },
+    {
+      "title": "Fitting & wiring sheets from accessory makers (free PDFs)",
+      "items": [
+        {
+          "name": "Alpine – 20 Alphard audio & speaker fitting sheet",
+          "url": "https://ec.alpine.co.jp/PDF/renova/20%20Alphard%20(ANH20W).pdf",
+          "what": "Photos of dash and door trim removal, head-unit plug pinout, speaker sizes. Summarised in the guides here."
+        },
+        {
+          "name": "Denso Ten (Eclipse) – Alphard/Vellfire nav kit instructions",
+          "url": "https://www.denso-ten.com/jp/eclipse/support/manual/pdf/NKTT-AV_I_0.pdf",
+          "what": "20 pages: trim removal, aerial routing, connections. Covers every 20-series code."
+        },
+        {
+          "name": "PCP – ATH20 hybrid wiring reference",
+          "url": "https://www.p-c-p.co.jp/datalib/TAUTEV/00054-013-alfard-ath20.pdf",
+          "what": "Accessory-maker wiring notes for the hybrid."
+        }
+      ]
+    },
+    {
+      "title": "Workshop manuals (paid)",
+      "items": [
+        {
+          "name": "Japanese 修理書 / 新型車解説書 / 電子技術マニュアル (via Buyee)",
+          "url": "https://buyee.jp/",
+          "what": "Toyota's own repair manual, new-model guide (e.g. NM0904J, Sept 2011, for ANH20W/GGH20W) and the electronic manual DVD turn up second-hand on Yahoo! Auctions Japan.",
+          "tip": "Yahoo! Auctions Japan blocks UK visitors, so search it through a proxy service such as Buyee or ZenMarket (search アルファード 20 修理書). The Japanese text translates well with Google Lens. Send me pages from a copy you own and I can translate them and add the figures here."
+        },
+        {
+          "name": "English workshop manual downloads",
+          "what": "Several UK/online sellers offer 'AH20 workshop & wiring manual' downloads. Where these come from isn't clear, and coverage varies by year. Check it matches ANH20/GGH20 before paying."
+        }
+      ]
+    },
+    {
+      "title": "Forums & owner write-ups",
+      "items": [
+        {
+          "name": "UK Alphard Club",
+          "url": "https://uk.alphardclub.com/",
+          "what": "The main UK owners' forum: guides, part numbers, an importer and dealer section."
+        },
+        {
+          "name": "UK Alphard Club – ANH20 body wiring diagrams",
+          "url": "https://uk.alphardclub.com/tutorials/article/14-external-wiring-diagrams-anh20/",
+          "what": "22 PDF diagrams for 2008 cars (lights, wipers, power doors, mirrors, windows). Filed under the 10 series by mistake."
+        },
+        {
+          "name": "Minkara 整備手帳 (maintenance logs)",
+          "url": "https://minkara.carview.co.jp/car/toyota/alphard/",
+          "what": "Thousands of Japanese owners' step-by-step photo write-ups for the 20 series. Note: Yahoo! Japan sites (Minkara, Yahoo! Auctions) block visitors from the UK.",
+          "tip": "Search Google for アルファード 20系 整備手帳 plus the job (e.g. プラグ交換 = plug change, ウォーターポンプ = water pump, ブレーキパッド = brake pads). Many of the same write-ups are mirrored on owners' blogs (Ameblo, goo) that do open from the UK."
+        },
+        {
+          "name": "Goo-net Pit garage blogs",
+          "url": "https://www.goo-net.com/pit/",
+          "what": "Japanese garages' job write-ups. Search for ANH20 plus the job."
+        },
+        {
+          "name": "Toyota Owners Club (UK)",
+          "url": "https://www.toyotaownersclub.com/forums/",
+          "what": "General Toyota forum with an Alphard/Estima/Previa section."
+        },
+        {
+          "name": "Lowyat forum (Malaysia)",
+          "url": "https://forum.lowyat.net/",
+          "what": "Lots of 20-series Vellfire owners in a hot climate. Good for air-con and running-cost threads."
+        }
+      ]
+    }
+  ]
+}

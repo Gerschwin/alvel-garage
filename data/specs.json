@@ -417,6 +417,43 @@
               "conf": "official"
             }
           ]
+        },
+        {
+          "label": "12 V battery",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE"
+              ],
+              "value": "Japanese D23L size. One owner's 2012 2.4 came with a GS Yuasa 90D23L. About 230 × 170 × 200 mm, negative terminal on the left ('L').",
+              "note": "UK fit reported: Bosch S4 026 (70 Ah). Higher Bosch S4 types fit the tray too.",
+              "src": [
+                "club-battery"
+              ],
+              "conf": "community"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "value": "80D23L reported on a 2008 3.5. UK fits suggested: Bosch S4 026, Varta E23.",
+              "src": [
+                "club-battery"
+              ],
+              "conf": "community"
+            },
+            {
+              "engine": [
+                "2AZ-FXE"
+              ],
+              "value": "Panasonic S55D23L AGM. UK replacement suggested: Yuasa HJ-S55D23L.",
+              "note": "Hybrids need the proper AGM type, not a standard flooded battery.",
+              "src": [
+                "club-battery"
+              ],
+              "conf": "community"
+            }
+          ]
         }
       ]
     },
@@ -463,12 +500,46 @@
               "engine": [
                 "2AZ-FE"
               ],
-              "value": "Iridium: Denso SK20R11 or NGK IFR6A11, gap about 1.1 mm, about 19 N·m (14 lb·ft)",
-              "note": "These are the usual 2AZ-FE plugs (Camry, RAV4, Estima). Not yet confirmed against a Toyota parts catalogue for the ANH20.",
+              "value": "Built May 2008 – Jun 2012: genuine Toyota 90919-01210 = DENSO SK20R11 (long-life iridium). Alternatives: DENSO Iridium Tough VK20, Iridium Power IK20.",
+              "note": "4 plugs. In the DENSO code, R11 = 1.1 mm gap; no 'H' = 19 mm thread reach.",
               "src": [
-                "ricks-2az"
+                "denso-plugs"
               ],
-              "conf": "unverified"
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2AZ-FE"
+              ],
+              "value": "Built Jun 2012 – Jan 2015: genuine Toyota 90919-01240 = DENSO SK16R11. Alternatives: VK16, IK16.",
+              "note": "Use the build date on the V5C/auction sheet, or read the old plug.",
+              "src": [
+                "denso-plugs"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "value": "Genuine Toyota 90919-01247 = DENSO FK20HR11 (6 plugs). Alternative: Iridium Tough VFKH20.",
+              "note": "'H' = 26.5 mm long-reach thread.",
+              "src": [
+                "denso-plugs"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2AZ-FE"
+              ],
+              "value": "Tightening torque about 19 N·m (14 lb·ft)",
+              "note": "Generic 2AZ-FE figure from two non-Toyota sources. Toyota's repair manual figure not yet seen.",
+              "src": [
+                "ricks-2az",
+                "boliden-2az"
+              ],
+              "conf": "community"
             }
           ]
         }

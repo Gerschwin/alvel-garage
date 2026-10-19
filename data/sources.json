@@ -96,5 +96,109 @@
     "url": "https://ricksfreeautorepairadvice.com/toyota-2-4-liter-firing-order-and-spark-plug-gap-2az-fe/",
     "kind": "community",
     "note": "Generic 2AZ-FE data, written for US models."
+  },
+  {
+    "id": "toyota-jp-oil",
+    "title": "Toyota Japan – Engine oil & oil filter maintenance",
+    "url": "https://toyota.jp/after_service/tenken/driver/maintenance/engine_oil/",
+    "kind": "official",
+    "note": "Petrol non-turbo: oil 15,000 km/1 year (severe 7,500 km/6 months); filter 15,000 km (severe 7,500 km)."
+  },
+  {
+    "id": "toyota-jp-engineroom",
+    "title": "Toyota Japan – Spark plugs, belts, coolant, air element",
+    "url": "https://toyota.jp/after_service/tenken/about/maintenance/engine",
+    "kind": "official",
+    "note": "Coolant: first 160,000 km/7 years, then 80,000 km/4 years. Air element 50,000 km (severe 25,000 km). Plugs and belts: inspect, replace when worn."
+  },
+  {
+    "id": "toyota-jp-brakes",
+    "title": "Toyota Japan – Brake maintenance",
+    "url": "https://toyota.jp/after_service/tenken/driver/maintenance/blake/",
+    "kind": "official",
+    "note": "Brake fluid every 2–3 years."
+  },
+  {
+    "id": "toyota-jp-battery",
+    "title": "Toyota Japan – Battery maintenance",
+    "url": "https://toyota.jp/after_service/tenken/driver/maintenance/battery/",
+    "kind": "official",
+    "note": "Replace about every 2–3 years, or when a battery tester says so."
+  },
+  {
+    "id": "denso-plugs",
+    "title": "DENSO Japan – Spark plug fitment table (Alphard)",
+    "url": "https://am.denso.com/search/plug/4wplug/4wjp_data.cgi?name=%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%89&filename=maker6jpn.txt&m=5",
+    "kind": "official",
+    "note": "The plug manufacturer's own table, including the genuine Toyota part numbers."
+  },
+  {
+    "id": "denso-plug-life",
+    "title": "DENSO Japan – Spark plug inspection & replacement",
+    "url": "https://www.denso.com/jp/ja/products-and-services/automotive-service-parts-and-accessories/plug/inspection/",
+    "kind": "official"
+  },
+  {
+    "id": "club-battery",
+    "title": "UK Alphard Club – All Alphard/Vellfire battery specs (forum)",
+    "url": "https://uk.alphardclub.com/forums/topic/7376-all-alphard-vellfire-battery-specs/",
+    "kind": "community"
+  },
+  {
+    "id": "club-wiring",
+    "title": "UK Alphard Club – External wiring diagrams ANH20 (forum PDFs)",
+    "url": "https://uk.alphardclub.com/tutorials/article/14-external-wiring-diagrams-anh20/",
+    "kind": "community",
+    "note": "22 body-electrical diagrams for 2008 cars (lights, wipers, power doors, mirrors, windows). Filed under the 10 series by mistake. Some 2009 changes are noted."
+  },
+  {
+    "id": "alpine-fit",
+    "title": "Alpine – 20 Alphard (ANH20W) audio & speaker fitting sheet (Japanese PDF)",
+    "url": "https://ec.alpine.co.jp/PDF/renova/20%20Alphard%20(ANH20W).pdf",
+    "kind": "trade",
+    "note": "Dash panel removal order, head-unit plug pinout, front and rear door speaker removal with dimensions. Surveyed on a May 2008 DBA-ANH20W."
+  },
+  {
+    "id": "eclipse-fit",
+    "title": "Denso Ten (Eclipse) – Alphard/Vellfire navigation fitting kit instructions (Japanese PDF)",
+    "url": "https://www.denso-ten.com/jp/eclipse/support/manual/pdf/NKTT-AV_I_0.pdf",
+    "kind": "trade",
+    "note": "20 pages: trim removal, aerial routing and connections for all 20-series codes."
+  },
+  {
+    "id": "capinetall",
+    "title": "capinetall – 20 Alphard weak points buying guide (Japanese)",
+    "url": "https://capinetall.com/archives/2136",
+    "kind": "community"
+  },
+  {
+    "id": "lcl-oil",
+    "title": "luxury-car-life – 20 Alphard 2AZ-FE oil consumption explained (Japanese)",
+    "url": "https://luxury-car-life.com/alphard-20-series-2az-fe-engine-oil/",
+    "kind": "community"
+  },
+  {
+    "id": "smak-shaken",
+    "title": "Garage SMAK – 20 Alphard shaken: oil leaks, oil consumption, boots (Japanese)",
+    "url": "https://ameblo.jp/garagesmak/entry-12909577605.html",
+    "kind": "trade"
+  },
+  {
+    "id": "retail-wp",
+    "title": "Japanese parts retailers – 20 Alphard 2AZ water pump & belt listings",
+    "url": "https://autoparts-sunrise.com/view/item/000000005164",
+    "kind": "trade"
+  },
+  {
+    "id": "cc45-wp",
+    "title": "cc45 – 20 Alphard water pump replacement (Japanese garage blog)",
+    "url": "https://cc45.jp/blog/maintenance/%E3%83%88%E3%83%A8%E3%82%BF%E3%80%8020%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%89%E3%80%80%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%9D%E3%83%B3%E3%83%97%E4%BA%A4%E6%8F%9B/",
+    "kind": "trade"
+  },
+  {
+    "id": "boliden-2az",
+    "title": "Bolidenforum – Technical data, 2AZ-FE (2.4 L)",
+    "url": "https://www.bolidenforum.de/portal/fahrzeugdaten/toyota-2013-corolla-l4-2-4l-2az-fe/?vd_lang=en",
+    "kind": "reference"
   }
 ]

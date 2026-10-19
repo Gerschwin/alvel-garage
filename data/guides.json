@@ -2,11 +2,24 @@
   {
     "id": "oil-change",
     "title": "Engine oil & filter change",
-    "engine": ["2AZ-FE"],
+    "engine": [
+      "2AZ-FE"
+    ],
     "difficulty": 2,
     "time": "45 min",
-    "tools": ["Ramps or a trolley jack and axle stands", "Socket set", "Oil filter wrench", "Drain tray (6 L or more)", "Funnel", "Gloves and rags"],
-    "parts": ["4.5 L of 0W-20 (or 5W-30) API SN/ILSAC oil – 4.3 L is needed", "Oil filter (club-listed 15601-76008; check against your frame number)", "New drain plug washer"],
+    "tools": [
+      "Ramps or a trolley jack and axle stands",
+      "Socket set",
+      "Oil filter wrench",
+      "Drain tray (6 L or more)",
+      "Funnel",
+      "Gloves and rags"
+    ],
+    "parts": [
+      "4.5 L of 0W-20 (or 5W-30) API SN/ILSAC oil – 4.3 L is needed",
+      "Oil filter (club-listed 15601-76008; check against your frame number)",
+      "New drain plug washer"
+    ],
     "steps": [
       "Run the engine for a few minutes so the oil is warm, not hot. Park on level ground, handbrake on, engine off.",
       "Raise the front on ramps, or jack it up at the proper lifting point and support it on axle stands. Never work under it on the jack alone.",
@@ -21,18 +34,37 @@
       "Switch off, wait at least 5 minutes, then re-check the dipstick and top up if needed.",
       "Reset the maintenance reminder if one is set, and log it in My Car."
     ],
-    "warnings": ["Hot oil burns. Let it cool if you've just driven far.", "Take used oil to the council tip; it's illegal to pour it away."],
-    "src": ["om-201209", "club-parts"],
+    "warnings": [
+      "Hot oil burns. Let it cool if you've just driven far.",
+      "Take used oil to the council tip; it's illegal to pour it away."
+    ],
+    "src": [
+      "om-201209",
+      "club-parts"
+    ],
     "conf": "community"
   },
   {
     "id": "cvt-fluid",
     "title": "CVT fluid drain, fill and level check",
-    "engine": ["2AZ-FE"],
+    "engine": [
+      "2AZ-FE"
+    ],
     "difficulty": 4,
     "time": "2–3 hours",
-    "tools": ["Ramps or jack and stands (car must end up level)", "24 mm socket and a long extension (filler bolt)", "6 mm hex key/bit (drain and overflow tube)", "Fluid pump or long funnel and tube", "Wire jumper for the OBD socket", "Thermometer or OBD reader that shows CVT temperature (useful)"],
-    "parts": ["Toyota CVT Fluid TC (or FE on later cars) – about 4–5 L per drain & fill; 10–12 L for a thorough change", "Filler bolt gasket 90430-18008", "Drain plug gasket 90430-12008"],
+    "tools": [
+      "Ramps or jack and stands (car must end up level)",
+      "24 mm socket and a long extension (filler bolt)",
+      "6 mm hex key/bit (drain and overflow tube)",
+      "Fluid pump or long funnel and tube",
+      "Wire jumper for the OBD socket",
+      "Thermometer or OBD reader that shows CVT temperature (useful)"
+    ],
+    "parts": [
+      "Toyota CVT Fluid TC (or FE on later cars) – about 4–5 L per drain & fill; 10–12 L for a thorough change",
+      "Filler bolt gasket 90430-18008",
+      "Drain plug gasket 90430-12008"
+    ],
     "steps": [
       "Get the car level and safely supported. The level check only works if the car is level.",
       "Undo the 24 mm filler bolt first. If you drain it and then can't open the filler, you're stranded.",
@@ -46,8 +78,16 @@
       "With the D light steady and the engine running, remove the drain plug. Let the excess run out of the overflow tube until it just drips, then refit the plug with a new gasket. If nothing comes out, it's low: add fluid and redo the check.",
       "Refit the filler bolt with a new gasket. Test drive, and look for leaks."
     ],
-    "warnings": ["Use CVT fluid only. ATF will damage the CVT.", "On very high-mileage cars with original fluid, some garages advise doing one drain & fill at a time over a few weeks rather than changing everything at once."],
-    "src": ["osenmu-cvt", "minkara-cvt", "om-201209", "d1-cvt-judder"],
+    "warnings": [
+      "Use CVT fluid only. ATF will damage the CVT.",
+      "On very high-mileage cars with original fluid, some garages advise doing one drain & fill at a time over a few weeks rather than changing everything at once."
+    ],
+    "src": [
+      "osenmu-cvt",
+      "minkara-cvt",
+      "om-201209",
+      "d1-cvt-judder"
+    ],
     "conf": "community"
   },
   {
@@ -55,8 +95,12 @@
     "title": "Smart key battery",
     "difficulty": 1,
     "time": "5 min",
-    "tools": ["Small flat screwdriver with tape round the tip"],
-    "parts": ["CR1632 lithium coin cell"],
+    "tools": [
+      "Small flat screwdriver with tape round the tip"
+    ],
+    "parts": [
+      "CR1632 lithium coin cell"
+    ],
     "steps": [
       "Slide out the mechanical key blade.",
       "Gently prise the cover apart at the slot. The taped tip stops it scratching.",
@@ -64,8 +108,12 @@
       "Clip the cover back together and refit the blade.",
       "Press a button. The LED on the key should light."
     ],
-    "warnings": ["Keep coin cells away from children. Swallowing one is extremely dangerous."],
-    "src": ["om-201209"],
+    "warnings": [
+      "Keep coin cells away from children. Swallowing one is extremely dangerous."
+    ],
+    "src": [
+      "om-201209"
+    ],
     "conf": "official"
   },
   {
@@ -73,8 +121,12 @@
     "title": "Checking and replacing a fuse",
     "difficulty": 1,
     "time": "10 min",
-    "tools": ["Fuse puller (in the engine bay fuse box)"],
-    "parts": ["Spare mini fuses of the right ratings"],
+    "tools": [
+      "Fuse puller (in the engine bay fuse box)"
+    ],
+    "parts": [
+      "Spare mini fuses of the right ratings"
+    ],
     "steps": [
       "Turn the power switch off.",
       "Find the right fuse in the Fuses section of this app. There are 2 boxes under the bonnet (3 on the hybrid) and one in each front footwell.",
@@ -82,8 +134,12 @@
       "Fit a fuse of exactly the same rating.",
       "If it blows again, there's a fault in that circuit. Get it looked at rather than fitting a bigger fuse."
     ],
-    "warnings": ["Never fit a higher-rated fuse or bridge a fuse holder. That's a fire risk."],
-    "src": ["om-201209"],
+    "warnings": [
+      "Never fit a higher-rated fuse or bridge a fuse holder. That's a fire risk."
+    ],
+    "src": [
+      "om-201209"
+    ],
     "conf": "official"
   },
   {
@@ -91,7 +147,10 @@
     "title": "Changing a wheel",
     "difficulty": 2,
     "time": "30 min",
-    "tools": ["Jack and wheel brace (supplied)", "Torque wrench (for the final tightening)"],
+    "tools": [
+      "Jack and wheel brace (supplied)",
+      "Torque wrench (for the final tightening)"
+    ],
     "parts": [],
     "steps": [
       "Stop somewhere safe and level, hazards on, handbrake on, P selected. Get passengers out and well away from traffic.",
@@ -103,8 +162,12 @@
       "Space-saver spare: 420 kPa (61 psi), keep to low speeds, and get the proper tyre refitted soon.",
       "Re-check the nut torque after a short drive."
     ],
-    "warnings": ["Don't use the car's jack with anyone under the car. For maintenance use a garage jack and axle stands at the proper lift points."],
-    "src": ["om-201209"],
+    "warnings": [
+      "Don't use the car's jack with anyone under the car. For maintenance use a garage jack and axle stands at the proper lift points."
+    ],
+    "src": [
+      "om-201209"
+    ],
     "conf": "official"
   },
   {
@@ -112,8 +175,14 @@
     "title": "Power sliding door won't open or close properly",
     "difficulty": 3,
     "time": "15 min – 4 hours",
-    "tools": ["Battery charger or multimeter", "10 mm spanner (battery terminal)", "Silicone grease"],
-    "parts": ["Possibly a door cable or motor assembly"],
+    "tools": [
+      "Battery charger or multimeter",
+      "10 mm spanner (battery terminal)",
+      "Silicone grease"
+    ],
+    "parts": [
+      "Possibly a door cable or motor assembly"
+    ],
     "steps": [
       "Check the 12 V battery first. Low voltage is a common cause of power doors misbehaving. Charge it or test it (12.4 V or more at rest).",
       "Check the PSD RH / PSD LH and ECU-B fuses (see Fuses).",
@@ -123,8 +192,176 @@
       "Clean the door runners and lightly grease them. Some owners also put silicone grease on the cable drum splines when refitting.",
       "Cable replacement is a big job (owners report about 4 hours). Get the right part for your frame number and follow a video for your generation."
     ],
-    "warnings": ["Keep hands clear of a power door. It can close with real force when it's re-learning its travel."],
-    "src": ["alphard-guide-doors", "club-doors", "club-buying"],
+    "warnings": [
+      "Keep hands clear of a power door. It can close with real force when it's re-learning its travel."
+    ],
+    "src": [
+      "alphard-guide-doors",
+      "club-doors",
+      "club-buying"
+    ],
+    "conf": "community"
+  },
+  {
+    "id": "dash-audio",
+    "title": "Removing the centre dash and audio unit",
+    "difficulty": 2,
+    "time": "30 min",
+    "tools": [
+      "Plastic trim tools",
+      "Phillips screwdriver",
+      "Masking tape to protect the trim"
+    ],
+    "parts": [
+      "Spare trim clips (they break easily)"
+    ],
+    "steps": [
+      "Disconnect the battery negative if you'll be unplugging the audio or nav.",
+      "Unscrew the gear knob.",
+      "Ease off the cluster panel around the gear lever. It's held by about 21 clips, so work round it gently with trim tools.",
+      "Unclip the air-con control panel (4 clips).",
+      "Unclip the audio surround panel (9 clips).",
+      "Undo the 4 screws holding the audio bracket.",
+      "Pull the audio unit and bracket forward and unplug it.",
+      "Refit in reverse. Seat every clip fully before pressing the panels home."
+    ],
+    "table": {
+      "title": "Factory audio plug (main connector, viewed from the car side)",
+      "cols": [
+        "Pin",
+        "Colour",
+        "Circuit"
+      ],
+      "rows": [
+        [
+          1,
+          "Green",
+          "Front right speaker"
+        ],
+        [
+          5,
+          "Blue",
+          "Front right speaker"
+        ],
+        [
+          2,
+          "Pink",
+          "Front left speaker"
+        ],
+        [
+          6,
+          "Purple",
+          "Front left speaker"
+        ],
+        [
+          11,
+          "Black",
+          "Rear right speaker"
+        ],
+        [
+          13,
+          "Yellow",
+          "Rear right speaker"
+        ],
+        [
+          12,
+          "Red",
+          "Rear left speaker"
+        ],
+        [
+          16,
+          "White",
+          "Rear left speaker"
+        ],
+        [
+          3,
+          "Grey",
+          "Accessory (switched) power"
+        ],
+        [
+          4,
+          "Yellow",
+          "Permanent (backup) power"
+        ],
+        [
+          7,
+          "Brown",
+          "Earth"
+        ],
+        [
+          8,
+          "Black",
+          "Aerial remote"
+        ],
+        [
+          10,
+          "Green",
+          "Illumination"
+        ],
+        [
+          "5P",
+          "Purple",
+          "Speed signal (for aftermarket nav)"
+        ],
+        [
+          "5P",
+          "Black",
+          "Parking brake signal"
+        ],
+        [
+          "5P",
+          "Red",
+          "Reversing light signal (for a camera)"
+        ]
+      ]
+    },
+    "notes": [
+      "The source sheet's + and − marks for each speaker pair didn't survive translation. Check polarity with a meter or the original PDF before wiring.",
+      "Audio opening is about 201 × 101 mm.",
+      "Cars with the Toyota Premium Sound (18-speaker) or Panoramic Super Live Sound (11-speaker) systems use a different integrated unit and can't take a standard aftermarket head unit.",
+      "Colours can vary with year and grade."
+    ],
+    "warnings": [
+      "The cluster panel has a lot of clips. Pull evenly and never lever against the dash itself."
+    ],
+    "src": [
+      "alpine-fit",
+      "eclipse-fit"
+    ],
+    "conf": "community"
+  },
+  {
+    "id": "door-trim",
+    "title": "Front and rear door trim & speaker removal",
+    "difficulty": 2,
+    "time": "30–45 min per door",
+    "tools": [
+      "Plastic trim tools",
+      "Phillips screwdriver",
+      "5 mm drill bit (front speakers)",
+      "Rivets or M5 screws to refit"
+    ],
+    "parts": [
+      "Spare door trim clips"
+    ],
+    "steps": [
+      "Front door: unclip the small cover behind the door mirror (2 clips and a hook).",
+      "Unclip the door pillar cover (3 clips).",
+      "Unclip the cover behind the interior door handle (3 hooks) and remove the screw behind it.",
+      "Remove the screw under the door pull, then unclip the door grip (3 hooks).",
+      "Unclip the power window switch panel (9 hooks) and unplug it.",
+      "Remove the last screw, then pop the trim off its 12 clips and lift it off the window ledge. Unplug anything still attached.",
+      "The front speaker is riveted in: drill out the 4 rivets with a 5 mm bit (they can't be reused) and lift the speaker out.",
+      "Rear sliding door: remove 1 screw, then unclip the trim (15 clips, 5 hooks). The speaker comes out after 3 screws.",
+      "Refit in reverse. Secure the front speaker with new rivets or M5 screws and nuts."
+    ],
+    "notes": [
+      "Front speaker mounting depth is about 61 mm and rear about 52 mm (from Alpine's measurements). Useful when choosing replacements."
+    ],
+    "warnings": [],
+    "src": [
+      "alpine-fit"
+    ],
     "conf": "community"
   }
 ]
