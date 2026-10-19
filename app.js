@@ -1,6 +1,6 @@
 'use strict';
-const APP_VERSION = '0.3.1';
-const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'resources', 'sources'];
+const APP_VERSION = '0.4.0';
+const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'camper', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -58,6 +58,7 @@ const views = {
       ${tile('#/buying', 'Buying an import', 'Checklist for a viewing')}
       ${tile('#/auction', 'Auction sheets', 'Grades and damage codes decoded')}
       ${tile('#/grades', 'Grades & trims', 'What 240S, 2.4Z, G Edition mean')}
+      ${tile('#/camper', 'Camper conversion', '4-berth plan, kit, DVLA rules')}
       ${tile('#/resources', 'Manuals & links', 'Diagrams, catalogues, forums')}
       ${tile('#/sources', 'Sources', 'Where every figure comes from')}
     </div>
@@ -171,6 +172,16 @@ const views = {
       rows.map(r => `<div class="card"><div class="meta"><span class="tag">Alphard</span><b>${esc(r.alphard)}</b></div><div class="meta"><span class="tag">Vellfire</span><b>${esc(r.vellfire)}</b></div><p class="val">${esc(r.what)}</p></div>`).join('') +
       `<p class="note">${esc(G.note)}</p>`;
   },
+  camper() {
+    const C = D.camper;
+    return `<h1>Camper conversion</h1><p class="lead">${esc(C.intro)}</p>
+      <h2>${esc(C.layout.title)}</h2><div class="card"><ul>${C.layout.items.map(x => `<li>${esc(x)}</li>`).join('')}</ul>${meta(C.layout)}</div>
+      <h2>${esc(C.power.title)}</h2><div class="card"><p class="val">${C.power.chain.map(esc).join(' → ')}</p><p class="note">${esc(C.power.extra)}</p><ul>${C.power.notes.map(x => `<li>${esc(x)}</li>`).join('')}</ul>${meta(C.power)}</div>
+      <h2>Rules & safety</h2>${C.legal.map(l => `<div class="card"><h3>${esc(l.t)}</h3><p class="val">${esc(l.d)}</p>${meta(l)}</div>`).join('')}
+      <h2>Kit list & budget</h2><div class="warn">Prices are planning estimates and haven't been checked one by one. Get current quotes.</div>
+      <div class="card"><table><tr><th>Item</th><th>Approx</th></tr>${C.parts.map(p => `<tr><td><b>${esc(p[0])}</b>${p[2] ? `<div class="note">${esc(p[2])}</div>` : ''}</td><td class="num">${esc(p[1])}</td></tr>`).join('')}</table>${meta({ src: C.parts_src, conf: 'community' })}</div>
+      <p class="note">${esc(C.fitters)}</p>`;
+  },
   sources() {
     return `<h1>Sources</h1><p class="lead">Every figure in the app links to one of these. Toyota's official manuals win wherever they disagree with anything else.</p>` +
       D.sources.map(s => `<div class="card"><h3>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</h3><span class="tag">${esc(s.kind)}</span>${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}</div>`).join('') +
@@ -248,6 +259,8 @@ function buildIndex() {
   D.guides.filter(applies).forEach(g => g.table && g.table.rows.forEach(r => index.push({ t: `${g.table.title}: pin ${r[0]}`, s: r.slice(1).join(' · '), h: '#/guides/' + g.id })));
   [...D.auction.overall.map(r => ['Auction grade ' + r[0], r[1]]), ...D.auction.damage.map(r => ['Auction code ' + r[0], r[1]]), ...D.auction.abbrev.map(r => ['Auction sheet ' + r[0], r[1]])].forEach(([t, x]) => index.push({ t, s: x, h: '#/auction' }));
   D.vehicles.grades.rows.forEach(r => index.push({ t: `${r.alphard} / ${r.vellfire}`, s: 'Grade · ' + r.what, h: '#/grades' }));
+  D.camper.parts.forEach(p => index.push({ t: p[0], s: 'Camper kit · ' + p[1] + ' ' + p[2], h: '#/camper' }));
+  D.camper.legal.forEach(l => index.push({ t: l.t, s: 'Camper · ' + l.d, h: '#/camper' }));
   D.resources.groups.forEach(g => g.items.forEach(it => index.push({ t: it.name, s: 'Manuals & links · ' + it.what, h: '#/resources' })));
 }
 function searchView(q) {
@@ -263,7 +276,7 @@ function route() {
   const [name, id] = path.split('/');
   const v = views[name || 'home'] || views.home;
   $('#view').innerHTML = v(id, new URLSearchParams(qs || ''));
-  document.querySelectorAll('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === (name || 'home') || (a.dataset.tab === 'specs' && ['parts', 'fuses'].includes(name)) || (a.dataset.tab === 'guides' && ['faults', 'resources'].includes(name)) || (a.dataset.tab === 'home' && ['buying', 'auction', 'grades'].includes(name))));
+  document.querySelectorAll('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === (name || 'home') || (a.dataset.tab === 'specs' && ['parts', 'fuses'].includes(name)) || (a.dataset.tab === 'guides' && ['faults', 'resources'].includes(name)) || (a.dataset.tab === 'home' && ['buying', 'auction', 'grades', 'camper'].includes(name))));
   $('#q').value = '';
   window.scrollTo(0, 0);
 }

@@ -245,5 +245,46 @@
     "kind": "community",
     "url": "",
     "note": "Grade 1 = modified, body-condition letter, R-grade variants, rust and recall tips. Rewritten here."
+  },
+  {
+    "id": "gov-motorcaravan",
+    "title": "GOV.UK – Converting a vehicle into a motor caravan",
+    "url": "https://www.gov.uk/government/publications/converting-a-vehicle-into-a-motor-caravan/converting-a-vehicle-into-a-motor-caravan",
+    "kind": "official",
+    "note": "DVLA's rules for changing the V5C body type to motor caravan."
+  },
+  {
+    "id": "club-camper-weight",
+    "title": "UK Alphard Club – All these conversions add weight (forum)",
+    "url": "https://uk.alphardclub.com/forums/topic/7664-all-these-conversions-adds-weight/",
+    "kind": "community"
+  },
+  {
+    "id": "club-camper",
+    "title": "UK Alphard Club – Camper conversion threads",
+    "url": "https://uk.alphardclub.com/forums/topic/1500-camper-conversion/",
+    "kind": "community",
+    "note": "Names Drivelodge (roofs), Northstar and New Dawn as Alphard roof fitters."
+  },
+  {
+    "id": "quirky-alphard",
+    "title": "Quirky Campers – Toyota Alphard camper listings",
+    "url": "https://www.quirkycampers.com/uk/for-sale/toyota-alphard-campervan-2-4-auto-pop-top-high-roof-options-bumble-campers/",
+    "kind": "trade",
+    "note": "Bumble Campers quote about £3,850 to add a pop-top or high top. Other listings show Wellhouse, Campervan Scotland and Fantastic Campervans builds."
+  },
+  {
+    "id": "carsales-2012",
+    "title": "Carsales – Toyota Alphard 2012 overview",
+    "url": "https://www.carsales.com.au/research/toyota/alphard/2012/no-badge/",
+    "kind": "reference",
+    "note": "Kerb weight 1,850 kg (ANH20)."
+  },
+  {
+    "id": "neil-camper",
+    "title": "Owner's camper plan (floorplan, wiring sketch, components & shopping lists)",
+    "url": "",
+    "kind": "community",
+    "note": "Prices are planning estimates from AI-assisted research and haven't been individually checked."
   }
 ]

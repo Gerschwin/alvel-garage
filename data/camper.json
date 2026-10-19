@@ -1,0 +1,158 @@
+{
+  "intro": "Planning notes for turning a 20-series Alphard/Vellfire into a 4-berth camper. The plan is based on an owner's own layout. Facts that matter legally (DVLA, weight, gas) link to their sources.",
+  "layout": {
+    "title": "4-berth layout (RHD, standard roof + pop-top)",
+    "items": [
+      "Swivel driver and passenger seats facing the living area",
+      "Removable dining table",
+      "Convertible bench that makes the main double bed",
+      "Pop-top roof with an upper bunk, about 800 × 1800 mm",
+      "Kitchen pod on the side run: sink, 2-burner gas hob, 12 V fridge",
+      "Wardrobe/storage",
+      "Diesel heater",
+      "Fresh and grey water tanks and an externally vented gas locker, mounted low"
+    ],
+    "src": [
+      "neil-camper"
+    ],
+    "conf": "community"
+  },
+  "power": {
+    "title": "12 V system",
+    "chain": [
+      "Vehicle battery",
+      "B2B / DC-DC charger",
+      "House battery (LiFePO4 100 Ah+)",
+      "Fuse / distribution panel",
+      "Loads: fridge, LED and USB, roof fan, diesel heater, 230 V inverter"
+    ],
+    "extra": "Solar panel (about 100 W) + MPPT controller also feeds the house battery.",
+    "notes": [
+      "A B2B charger protects the van's own battery and charges the lithium house battery properly from the alternator.",
+      "Keep the inverter for small loads (laptops, chargers). Kettles and hairdryers drain a 100 Ah battery very fast.",
+      "Fuse every positive cable close to the battery, and size cables for the current and length."
+    ],
+    "src": [
+      "neil-camper"
+    ],
+    "conf": "community"
+  },
+  "parts": [
+    [
+      "Pop-top roof (supplied & fitted)",
+      "£2,500–£4,000",
+      "Alphard-specific fitters reported: Drivelodge roofs (fitted by Northstar, New Dawn and others). Bumble Campers quote about £3,850. Generic VW pop-top makers may not offer an Alphard roof, so ask first. If your car has the twin moonroof, check the fitter can work with it."
+    ],
+    [
+      "Kitchen pod: sink + hob + storage (e.g. Vangear X-Pod Gen2)",
+      "£520–£1,200",
+      ""
+    ],
+    [
+      "Combined sink & 2-burner hob (Dometic SMEV 9722)",
+      "£180–£260",
+      "Choose left or right hand."
+    ],
+    [
+      "12 V compressor fridge (Dometic CFX40 class, 38–50 L)",
+      "£600–£1,700",
+      ""
+    ],
+    [
+      "LiFePO4 house battery 12 V 100 Ah (LiTime, Renogy)",
+      "£190–£350",
+      "Get one with a built-in BMS."
+    ],
+    [
+      "B2B charger (Victron Orion-Tr Smart 12/12, Sterling)",
+      "£150–£450",
+      ""
+    ],
+    [
+      "Solar 100 W + MPPT controller (Renogy, Eco-Worthy)",
+      "£70–£200",
+      ""
+    ],
+    [
+      "Inverter 600–800 W pure sine (Victron Phoenix)",
+      "£150–£350",
+      ""
+    ],
+    [
+      "Roof fan (Maxxair Maxxfan Deluxe 400 × 400)",
+      "£290–£340",
+      "Check it fits the pop-top's roof panel."
+    ],
+    [
+      "Diesel heater (Webasto AirTop 2000 STC, Planar/Autoterm 2 kW)",
+      "£400–£1,200",
+      "Needs a separate fuel take-off and an exhaust routed safely away from doors and windows."
+    ],
+    [
+      "Fresh / grey water tanks (35 L / 25 L)",
+      "£50–£200",
+      ""
+    ],
+    [
+      "External vented gas locker + 2–5 kg bottle + regulator",
+      "£80–£250",
+      "Must be sealed from the living area and vented to the outside."
+    ],
+    [
+      "LED lights + USB sockets",
+      "£50–£150",
+      ""
+    ],
+    [
+      "Smoke + CO alarm + fire extinguisher",
+      "£35–£80",
+      "Essential with gas and a heater."
+    ],
+    [
+      "Insulation & flooring (Armaflex, Celotex, 12 mm marine ply, vinyl)",
+      "£200–£700",
+      ""
+    ]
+  ],
+  "parts_src": [
+    "neil-camper",
+    "club-camper",
+    "quirky-alphard"
+  ],
+  "legal": [
+    {
+      "t": "DVLA 'motor caravan' body type",
+      "d": "Optional, but you can only apply once the van has all of these. Outside: two or more windows on at least one side of the main body (cab door windows don't count), a separate door into the living area (the sliding door does), and a high-top or pop-top roof. Inside, rigidly fixed: seats and a table (removable is OK), a bed (can be made from the seats), cooking facilities and storage. Send the V5C with photos and a checklist to DVLA, who may inspect it. GOV.UK says the body type shouldn't affect your insurance category or speed limits.",
+      "src": [
+        "gov-motorcaravan"
+      ],
+      "conf": "official"
+    },
+    {
+      "t": "Weight",
+      "d": "An ANH20 weighs about 1,850 kg at the kerb. One owner's converted 2.4 Alphard with a pop-top weighed 2,220 kg with two people and weekend kit, close to the limit. Find your GVW on the Japanese export certificate or the plate, take out seats you don't need (the third row is heavy), and weigh the finished van at a public weighbridge, axle by axle if you can.",
+      "src": [
+        "carsales-2012",
+        "club-camper-weight"
+      ],
+      "conf": "community"
+    },
+    {
+      "t": "Insurance",
+      "d": "Tell your insurer about the conversion before you use it. Specialist camper insurers cover self-builds but want photos and details of gas and electrics.",
+      "src": [
+        "gov-motorcaravan"
+      ],
+      "conf": "community"
+    },
+    {
+      "t": "Gas & heater safety",
+      "d": "Get any LPG installation checked by a qualified engineer (an LPG/caravan gas certificate). Fit a CO alarm. Run diesel heater exhausts away from doors and windows.",
+      "src": [
+        "neil-camper"
+      ],
+      "conf": "community"
+    }
+  ],
+  "fitters": "Seen in UK Alphard listings and forums: Drivelodge (roof maker), Northstar, New Dawn, Wellhouse, Bumble Campers, Campervan Scotland, Fantastic Campervans (Fife). Availability changes, so contact them for current quotes."
+}
