@@ -1,6 +1,6 @@
 'use strict';
-const APP_VERSION = '0.2.0';
-const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'resources', 'sources'];
+const APP_VERSION = '0.3.0';
+const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -31,7 +31,7 @@ function fitTags(x) {
 const CONF = { official: 'Official source', community: 'Owner-sourced', unverified: 'Unverified' };
 function meta(x) {
   const src = (x.src || []).map(id => D.sources.find(s => s.id === id)).filter(Boolean)
-    .map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(shortSrc(s))}</a>`).join(', ');
+    .map(s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.title)}">${esc(shortSrc(s))}</a>` : `<span title="${esc(s.title)}">${esc(shortSrc(s))}</span>`).join(', ');
   return `<div class="meta">${x.conf ? `<span class="badge b-${esc(x.conf)}">${CONF[x.conf] || esc(x.conf)}</span>` : ''}${fitTags(x)}${src ? `<span class="src">${src}</span>` : ''}</div>`;
 }
 const shortSrc = s => s.id.startsWith('om-') ? 'Owner\'s manual ' + s.id.slice(3, 7) : s.title.split(' – ')[0];
@@ -56,6 +56,8 @@ const views = {
       ${tile('#/guides', 'DIY guides', 'Step-by-step jobs')}
       ${tile('#/faults', 'Known faults', 'Symptoms → causes → fixes')}
       ${tile('#/buying', 'Buying an import', 'Checklist for a viewing')}
+      ${tile('#/auction', 'Auction sheets', 'Grades and damage codes decoded')}
+      ${tile('#/grades', 'Grades & trims', 'What 240S, 2.4Z, G Edition mean')}
       ${tile('#/resources', 'Manuals & links', 'Diagrams, catalogues, forums')}
       ${tile('#/sources', 'Sources', 'Where every figure comes from')}
     </div>
@@ -109,7 +111,7 @@ const views = {
   buying() {
     const ticks = store.get('buyTicks', {});
     return `<h1>Buying an import</h1><p class="lead">Take this to a viewing. Ticks are saved on this device only.</p>${meta({ src: D.buying.src, conf: 'community' })}
-      <p><button class="btn ghost small" data-act="clearTicks">Clear ticks</button></p>` +
+      <p><a class="btn small" href="#/auction">Read the auction sheet</a> <a class="btn ghost small" href="#/grades">Grades & trims</a> <button class="btn ghost small" data-act="clearTicks">Clear ticks</button></p>` +
       D.buying.sections.map((s, i) => `<h2>${esc(s.title)}</h2><div class="card"><ul class="check">` +
       s.items.map((t, j) => `<li><label style="color:inherit;font-size:1rem;margin:0"><input type="checkbox" data-tick="${i}.${j}" ${ticks[i + '.' + j] ? 'checked' : ''}>${esc(t)}</label></li>`).join('') + `</ul></div>`).join('');
   },
@@ -150,9 +152,28 @@ const views = {
     return `<h1>Manuals & links</h1><p class="lead">${esc(D.resources.intro)}</p>` + D.resources.groups.map(g => `<h2>${esc(g.title)}</h2>` +
       g.items.map(it => `<div class="card"><h3>${it.url ? `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.name)}</a>` : esc(it.name)}</h3><p class="val">${esc(it.what)}</p>${it.tip ? `<p class="note">Tip: ${esc(it.tip)}</p>` : ''}</div>`).join('')).join('');
   },
+  auction() {
+    const A = D.auction, tbl = (rows, h) => `<table><tr><th>${h[0]}</th><th>${h[1]}</th></tr>${rows.map(r => `<tr><td class="num"><b>${esc(r[0])}</b></td><td>${esc(r[1])}</td></tr>`).join('')}</table>`;
+    return `<h1>Auction sheets</h1><p class="lead">${esc(A.intro)}</p>${meta({ src: A.src, conf: 'community' })}
+      <div class="card"><h3>Decode a sheet code</h3><p class="note">Type what's on the sheet or diagram, e.g. <code>4.5</code>, <code>RA</code>, <code>AU2</code>, <code>W3</code>, <code>XX</code>, <code>無効</code>.</p>
+        <input id="acode" placeholder="e.g. AU2" autocapitalize="characters" spellcheck="false"><div id="adecoded" class="decoded"></div></div>
+      <h2>Overall grade</h2><div class="card">${tbl(A.overall, ['Grade', 'Meaning'])}</div>
+      <h2>Interior grade (letter)</h2><div class="card">${tbl(A.interior, ['Grade', 'Meaning'])}</div>
+      <h2>Body diagram codes</h2><p class="note">A letter for the type of damage plus a number for size (1 small → 3 large).</p><div class="card">${tbl(A.damage, ['Code', 'Meaning'])}</div>
+      <h2>Equipment abbreviations</h2><div class="card">${tbl(A.abbrev, ['Code', 'Meaning'])}</div>
+      <h2>Cars listed more than once</h2><div class="card"><h3>Why it happens</h3><ul>${A.relisted.why.map(x => `<li>${esc(x)}</li>`).join('')}</ul><h3>What to check</h3><ul>${A.relisted.check.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+      <h2>Which auctions</h2><div class="card"><ul>${A.auctions.tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>${tbl(A.auctions.week, ['Day', 'Main auctions'])}</div>`;
+  },
+  grades() {
+    const G = D.vehicles.grades, m = model();
+    const rows = G.rows.filter(r => !m || r.engine.includes(m.engine));
+    return `<h1>Grades & trims</h1><p class="lead">${esc(G.intro)}</p>${meta({ src: G.src, conf: G.conf })}` +
+      rows.map(r => `<div class="card"><div class="meta"><span class="tag">Alphard</span><b>${esc(r.alphard)}</b></div><div class="meta"><span class="tag">Vellfire</span><b>${esc(r.vellfire)}</b></div><p class="val">${esc(r.what)}</p></div>`).join('') +
+      `<p class="note">${esc(G.note)}</p>`;
+  },
   sources() {
     return `<h1>Sources</h1><p class="lead">Every figure in the app links to one of these. Toyota's official manuals win wherever they disagree with anything else.</p>` +
-      D.sources.map(s => `<div class="card"><h3><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></h3><span class="tag">${esc(s.kind)}</span>${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}</div>`).join('') +
+      D.sources.map(s => `<div class="card"><h3>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</h3><span class="tag">${esc(s.kind)}</span>${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}</div>`).join('') +
       `<p class="foot">Toyota Japan has online manuals only from April 2010. For an earlier car (May 2008 – Mar 2010), a paper manual from the glovebox is the best check.</p>`;
   }
 };
@@ -194,6 +215,26 @@ function decode(raw) {
     <p>${car === m.code ? '<span class="badge b-official">This is your selected model</span>' : `<button class="btn small" data-act="setCar" data-code="${esc(m.code)}">Set as my model</button>`}</p>`;
 }
 
+function decodeAuction(raw) {
+  const q = raw.trim().toUpperCase();
+  if (!q) return '';
+  const A = D.auction, out = [];
+  const match = r => r[0].toUpperCase().split(/\s*\/\s*/).includes(q) || r[0].toUpperCase() === q;
+  [['Overall grade', A.overall], ['Interior grade', A.interior], ['Abbreviation', A.abbrev]].forEach(([label, rows]) =>
+    rows.filter(match).forEach(r => out.push(`<div class="row"><span class="tag">${label}</span> <b>${esc(r[0])}</b>: ${esc(r[1])}</div>`)));
+  const mt = q.match(/^([A-Z]{1,2})(\d)?$/);
+  if (mt) {
+    const letters = mt[1] === 'XX' ? ['XX'] : mt[1].split('');
+    const hits = letters.map(l => A.damage.find(d => d[0] === l)).filter(Boolean);
+    if (hits.length === letters.length) {
+      const size = { 1: 'small', 2: 'medium', 3: 'large' }[mt[2]];
+      out.push(...hits.map(d => `<div class="row"><span class="tag">Body diagram</span> <b>${esc(d[0])}</b>: ${esc(d[1])}</div>`));
+      if (size) out.push(`<div class="note">Size ${esc(mt[2])} = ${size}</div>`);
+    }
+  }
+  return out.join('') || '<p class="note">Not a code I know. Check the tables below, or get the sheet translated.</p>';
+}
+
 // ---- search across everything ----
 let index = [];
 function buildIndex() {
@@ -205,6 +246,8 @@ function buildIndex() {
   D.faults.filter(applies).forEach(f => index.push({ t: f.title, s: 'Fault · ' + f.symptoms + ' ' + f.cause, h: '#/faults' }));
   D.schedule.items.filter(applies).forEach(i => index.push({ t: i.task, s: 'Service schedule', h: '#/service' }));
   D.guides.filter(applies).forEach(g => g.table && g.table.rows.forEach(r => index.push({ t: `${g.table.title}: pin ${r[0]}`, s: r.slice(1).join(' · '), h: '#/guides/' + g.id })));
+  [...D.auction.overall.map(r => ['Auction grade ' + r[0], r[1]]), ...D.auction.damage.map(r => ['Auction code ' + r[0], r[1]]), ...D.auction.abbrev.map(r => ['Auction sheet ' + r[0], r[1]])].forEach(([t, x]) => index.push({ t, s: x, h: '#/auction' }));
+  D.vehicles.grades.rows.forEach(r => index.push({ t: `${r.alphard} / ${r.vellfire}`, s: 'Grade · ' + r.what, h: '#/grades' }));
   D.resources.groups.forEach(g => g.items.forEach(it => index.push({ t: it.name, s: 'Manuals & links · ' + it.what, h: '#/resources' })));
 }
 function searchView(q) {
@@ -220,7 +263,7 @@ function route() {
   const [name, id] = path.split('/');
   const v = views[name || 'home'] || views.home;
   $('#view').innerHTML = v(id, new URLSearchParams(qs || ''));
-  document.querySelectorAll('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === (name || 'home') || (a.dataset.tab === 'specs' && ['parts', 'fuses'].includes(name)) || (a.dataset.tab === 'guides' && ['faults', 'resources'].includes(name))));
+  document.querySelectorAll('.tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === (name || 'home') || (a.dataset.tab === 'specs' && ['parts', 'fuses'].includes(name)) || (a.dataset.tab === 'guides' && ['faults', 'resources'].includes(name)) || (a.dataset.tab === 'home' && ['buying', 'auction', 'grades'].includes(name))));
   $('#q').value = '';
   window.scrollTo(0, 0);
 }
@@ -271,6 +314,7 @@ document.addEventListener('change', e => {
 });
 document.addEventListener('input', e => {
   if (e.target.id === 'frame') $('#decoded').innerHTML = decode(e.target.value);
+  if (e.target.id === 'acode') $('#adecoded').innerHTML = decodeAuction(e.target.value);
   if (e.target.id === 'q') { const q = e.target.value.trim(); if (q.length > 1) $('#view').innerHTML = searchView(q); else if (!q) route(); }
 });
 $('#carBtn').addEventListener('click', () => {

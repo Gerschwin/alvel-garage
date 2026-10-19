@@ -1,0 +1,226 @@
+{
+  "intro": "How to read a Japanese auction sheet before you bid. Grades vary a little between auctions and inspectors, so always get the whole sheet translated. Even a grade 4.5 car can hide one serious fault.",
+  "src": [
+    "owner-auction",
+    "club-buying"
+  ],
+  "overall": [
+    [
+      "S / 6",
+      "Under a year from first registration. As new."
+    ],
+    [
+      "5",
+      "Near perfect. Very rare on a car more than 10 years old."
+    ],
+    [
+      "4.5",
+      "Excellent for its age, with a few small, easily fixed marks. Rare over 15 years old."
+    ],
+    [
+      "4",
+      "Above average. Some light fade or dents; usually under about 100,000 km."
+    ],
+    [
+      "3.5",
+      "The most common grade, with a very wide spread: burns, bigger dents, peeling paint. Typically 100,000–200,000 km. Read the notes carefully and get an inspection."
+    ],
+    [
+      "3",
+      "Poor overall, or a serious issue (rust, mechanical), or a minor accident that didn't need frame repair."
+    ],
+    [
+      "2",
+      "Very poor, often with rust holes. Mostly parts cars."
+    ],
+    [
+      "RA",
+      "Minor accident damage, well repaired. Otherwise can be as good as a 4.5. Worth an inspection."
+    ],
+    [
+      "R",
+      "Accident repaired, which can mean anything from small to major. Not the same as a UK write-off. The notes and diagram show what was repaired."
+    ],
+    [
+      "*** / 0 / 無効 / blank",
+      "Not inspected. It could be too old to grade, the seller chose the cheapest listing, an unrepaired accident, a non-runner, flood damage or unconfirmed modifications. Photos taken outdoors make accident or non-runner more likely. Ask for an inspection."
+    ]
+  ],
+  "interior": [
+    [
+      "A",
+      "Excellent. Rare over 10 years old."
+    ],
+    [
+      "B",
+      "Very nice: maybe dirty or a worn wheel/knob, but nothing really wrong."
+    ],
+    [
+      "C",
+      "Average for 15+ years old. A mixed bag, so check the notes."
+    ],
+    [
+      "D / E",
+      "Poor: cracked dash, sagging headlining, ripped or stained seats, missing trim. The big auctions rarely use these."
+    ]
+  ],
+  "damage": [
+    [
+      "A",
+      "Scratch or chip (A1 polishes out, A2 medium, A3 large: 10–50 cm or across panels)"
+    ],
+    [
+      "U",
+      "Dent (U1 thumb-size, U2 palm-size, U3 larger)"
+    ],
+    [
+      "E",
+      "Tiny dents, e.g. hail (E1–E3)"
+    ],
+    [
+      "B",
+      "Dent or bend (smaller auctions)"
+    ],
+    [
+      "W",
+      "Repaired or repainted (W1 good, W2 slight ripple, W3 poor: drips, mismatch, wrinkles)"
+    ],
+    [
+      "Y",
+      "Crack or tear (Y1 thumb-size, Y2 palm-size, often 5–10 cm on bumpers, Y3 larger)"
+    ],
+    [
+      "S",
+      "Rust (S1 fist-size, S2 larger)"
+    ],
+    [
+      "C",
+      "Heavy corrosion (C1 fist-size, C2 larger)"
+    ],
+    [
+      "P",
+      "Paint damage: peeling, drips (P2 usually needs a repaint)"
+    ],
+    [
+      "F",
+      "Faded paint"
+    ],
+    [
+      "H",
+      "Cloudy, usually headlights"
+    ],
+    [
+      "G",
+      "Stone chip (often on the windscreen). Usually tiny, not a reason to replace the glass."
+    ],
+    [
+      "X",
+      "Panel broken or needs replacing"
+    ],
+    [
+      "XX",
+      "Panel has been replaced"
+    ],
+    [
+      "AU / AY",
+      "Combined, e.g. AU3 = large scratch with large dent, AY2 = medium scratch and crack"
+    ]
+  ],
+  "abbrev": [
+    [
+      "AC / AAC",
+      "Air-con / climate control"
+    ],
+    [
+      "FA / AT",
+      "Automatic gearbox"
+    ],
+    [
+      "CA",
+      "Column-shift automatic"
+    ],
+    [
+      "F5 / F6",
+      "5- / 6-speed manual"
+    ],
+    [
+      "PS",
+      "Power steering"
+    ],
+    [
+      "PW",
+      "Power windows"
+    ],
+    [
+      "SR",
+      "Sunroof"
+    ],
+    [
+      "AW",
+      "Alloy wheels"
+    ],
+    [
+      "TV",
+      "TV / screen fitted"
+    ],
+    [
+      "カワ / 革",
+      "Leather seats"
+    ],
+    [
+      "エアB",
+      "Airbags"
+    ],
+    [
+      "# / $ / *",
+      "Next to the mileage: not confirmed (old car, odometer swap, 5-digit clock). Often genuine, but get it checked."
+    ]
+  ],
+  "relisted": {
+    "why": [
+      "Didn't reach the reserve, so it's listed again elsewhere or later",
+      "Traded between exporters and dealers",
+      "Cleaned up or repaired, then relisted for a better grade",
+      "Moved to a different auction to find better prices",
+      "Accident car (R/X) repaired and re-inspected"
+    ],
+    "check": [
+      "Mileage must rise from sheet to sheet. Any drop is a big red flag for clocking.",
+      "Treat a sudden grade jump (e.g. R → 4.5) with suspicion: find out what was repaired.",
+      "Damage or frame notes on an earlier sheet shouldn't just disappear.",
+      "Ask for every previous sheet. A seller who won't show them may be hiding something."
+    ]
+  },
+  "auctions": {
+    "tips": [
+      "Most good cars go through a handful of big physical auctions with inspection agents: Tokyo, Nagoya, Osaka, Kobe and Fukuoka.",
+      "USS controls more than half of Japanese auction sales. TAA and smaller auctions are often cheaper, and dealers move cars from them to USS for a quick profit.",
+      "Fukuoka can be cheaper. Allow about ¥30,000 to move a car to Osaka for shipping.",
+      "Avoid Hokkaido/Sapporo cars: months of snow and salted roads mean rust, plus about ¥60,000 extra transport.",
+      "Online-only auctions (AUCNET, NPS) can't be physically inspected.",
+      "Previous-sale data services (e.g. JCHC) show a car's earlier grades and prices. Cars first time at auction are usually cheaper."
+    ],
+    "week": [
+      [
+        "Tue",
+        "USS Yokohama, JU Saitama, CAA Tokyo, CAA Gifu, TAA Kinki, TAA Kyushu, NAA Fukuoka"
+      ],
+      [
+        "Wed",
+        "JAA, CAA Chubu, BAYAUC, BCN Saitama, KCAA Minami Kyushu, USS Fukuoka, MIRIVE Saitama, USS Kobe"
+      ],
+      [
+        "Thu",
+        "USS Tokyo, MIRIVE Osaka, KCAA Fukuoka, TAA Kantou"
+      ],
+      [
+        "Fri",
+        "USS Nagoya, USS Osaka, ARAI Bayside, JU Fukuoka, USS Saitama, NAA Tokyo"
+      ],
+      [
+        "Sat",
+        "USS HAA Kobe, USS Fukuoka, USS Gunma, TAA Yokohama (JU Gifu on Saturdays is mostly dealer relists with high reserves)"
+      ]
+    ]
+  }
+}

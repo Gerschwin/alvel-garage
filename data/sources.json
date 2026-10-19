@@ -200,5 +200,43 @@
     "title": "Bolidenforum – Technical data, 2AZ-FE (2.4 L)",
     "url": "https://www.bolidenforum.de/portal/fahrzeugdaten/toyota-2013-corolla-l4-2-4l-2az-fe/?vd_lang=en",
     "kind": "reference"
+  },
+  {
+    "id": "owner-brakes",
+    "title": "Owner's workshop notes – front brake pad & disc change",
+    "kind": "community",
+    "url": "",
+    "note": "The torque figures are written in Toyota repair-manual format (N·m / kgf·cm / ft·lbf). Which model's manual they came from isn't confirmed."
+  },
+  {
+    "id": "owner-auction",
+    "title": "Owner's notes – Japanese auction import guide",
+    "kind": "community",
+    "url": "",
+    "note": "Compiled from importers' guides. Rewritten here."
+  },
+  {
+    "id": "icar-alphard-grades",
+    "title": "iCar Sapporo – 20 Alphard grade comparison (Japanese)",
+    "url": "https://icar-sapporo.com/magazine/column/1631/",
+    "kind": "trade"
+  },
+  {
+    "id": "icar-vellfire-grades",
+    "title": "iCar Sapporo – 20 Vellfire grade comparison (Japanese)",
+    "url": "https://icar-sapporo.com/magazine/column/2198/",
+    "kind": "trade"
+  },
+  {
+    "id": "cobby-tyres",
+    "title": "COBBY – Vellfire original tyre & wheel sizes by grade (Japanese)",
+    "url": "https://cobby.jp/vellfire-sizelist.html",
+    "kind": "trade"
+  },
+  {
+    "id": "goonet-vellfire",
+    "title": "Goo-net – Vellfire model history and special editions (Japanese)",
+    "url": "https://www.goo-net.com/catalog/TOYOTA/VELLFIRE/",
+    "kind": "trade"
   }
 ]

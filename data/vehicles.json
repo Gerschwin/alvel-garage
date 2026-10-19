@@ -72,5 +72,88 @@
     "DBA-": "Petrol car meeting Japan's 2005 emissions standard",
     "CBA-": "Petrol car meeting Japan's 2000 emissions standard (older cars)",
     "DAA-": "Hybrid car meeting Japan's 2005 emissions standard"
+  },
+  "grades": {
+    "intro": "The grade is on the auction sheet and the Japanese export certificate. The Alphard (Toyopet dealers) and Vellfire (Netz dealers) grade names line up as shown. 'Aero' grades have the sportier bumpers and side skirts. Hybrids (ATH20W) were added at the late-2011 facelift.",
+    "src": [
+      "icar-alphard-grades",
+      "icar-vellfire-grades",
+      "cobby-tyres",
+      "goonet-vellfire"
+    ],
+    "conf": "community",
+    "rows": [
+      {
+        "alphard": "240X / 350X*",
+        "vellfire": "2.4X / 3.5X",
+        "engine": [
+          "2AZ-FE",
+          "2GR-FE"
+        ],
+        "what": "Entry grade. Standard body, 16-inch alloys (some 3.5 2WD on 17s). 7 or 8 seats. Urethane wheel and gear knob. Power sliding doors optional."
+      },
+      {
+        "alphard": "240G / 350G",
+        "vellfire": "2.4V / 3.5V",
+        "engine": [
+          "2AZ-FE",
+          "2GR-FE"
+        ],
+        "what": "Comfort grade. Standard body, 16 or 17-inch wheels. Power sliding doors standard, power ottoman, memory driving position, brown wood-grain trim. 7 or 8 seats."
+      },
+      {
+        "alphard": "240S / 350S",
+        "vellfire": "2.4Z / 3.5Z",
+        "engine": [
+          "2AZ-FE",
+          "2GR-FE"
+        ],
+        "what": "Sporty 'aero' grade. Body kit, 18-inch alloys (235/50R18), smoked rear lights, sports meters, leather wheel and knob. Captain seats (7) or 6:4 bench (8)."
+      },
+      {
+        "alphard": "350G L Package",
+        "vellfire": "3.5V L Edition",
+        "engine": [
+          "2GR-FE"
+        ],
+        "what": "3.5 only. Leather, executive power seats in row 2, heated front seats, twin moonroof."
+      },
+      {
+        "alphard": "240S / 350S C Package",
+        "vellfire": "2.4Z / 3.5Z G Edition",
+        "engine": [
+          "2AZ-FE",
+          "2GR-FE"
+        ],
+        "what": "Top aero grade. Executive power seats in row 2 (power recline and ottoman, big headrests and armrests). Passenger power ottoman."
+      },
+      {
+        "alphard": "240S Type Gold / Prime Selection",
+        "vellfire": "2.4Z / 3.5Z Golden Eyes (I, II)",
+        "engine": [
+          "2AZ-FE",
+          "2GR-FE"
+        ],
+        "what": "Special editions on the aero grades: gold-tinted headlight surrounds, special trim (gloss black wood on Type Gold, brown on Prime Selection). Golden Eyes II came with the Oct 2013 update."
+      },
+      {
+        "alphard": "G's (2012–)",
+        "vellfire": "2.4Z G's / 3.5Z G's",
+        "engine": [
+          "2AZ-FE",
+          "2GR-FE"
+        ],
+        "what": "Toyota's factory sports version: 19-inch wheels (245/40R19), sports suspension and body kit."
+      },
+      {
+        "alphard": "Hybrid X / G / SR (+ L / C Package)",
+        "vellfire": "Hybrid X / V / ZR (+ L / G Edition)",
+        "engine": [
+          "2AZ-FXE"
+        ],
+        "what": "2.4 hybrid with E-Four 4WD, 7 seats. Packages mirror the petrol ones (leather, executive row 2, twin moonroof)."
+      }
+    ],
+    "note": "* The Alphard 3.5 was mainly sold as G and S. 'X' mostly means a 2.4. Package names varied over the years, so the auction sheet's grade line is the best evidence. The 30-series names (S-A, S-C, G-F, Executive Lounge) aren't used on the 20 series."
   }
 }

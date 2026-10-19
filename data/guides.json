@@ -363,5 +363,56 @@
       "alpine-fit"
     ],
     "conf": "community"
+  },
+  {
+    "id": "front-brakes",
+    "title": "Front brake pads & discs",
+    "difficulty": 3,
+    "time": "1.5–2 hours (both sides)",
+    "tools": [
+      "3-tonne trolley jack and 2 × 3-tonne axle stands",
+      "1/2\" socket set, breaker bar and torque wrench",
+      "Spanner set and screwdrivers",
+      "G-clamp or piston wind-back tool",
+      "Wire brushes and brake cleaner",
+      "Impact driver (for a disc retaining screw)",
+      "Copper-free brake grease and anti-seize"
+    ],
+    "parts": [
+      "Front pads (with new clips/shims if supplied)",
+      "Front discs, if they're worn below minimum or lipped"
+    ],
+    "steps": [
+      "Open the bonnet and crack the brake fluid reservoir cap so fluid can rise freely when you push the pistons back. Watch it doesn't overflow.",
+      "Loosen the wheel nuts, jack up the car, put it on axle stands and remove the wheel. Turn the steering out to give better access.",
+      "Undo the two caliper bolts (upper and lower, the ones with rubber boots behind them).",
+      "Alternative for pads only: remove just the lower bolt and swing the caliper up like a clam shell.",
+      "With the old inner pad still in place, push the piston back with the G-clamp.",
+      "Lift the caliper off and hang it on a hook or bungee. Never let it hang on the brake hose.",
+      "Take out the pads and their clips. Pull out the slide pins, clean them and check the boots.",
+      "If you're changing discs: undo the two carrier bolts (top and bottom) and remove the carrier.",
+      "Remove the disc retaining screw if there is one (an impact driver helps). If the disc is stuck, tap it alternately top and bottom with a hammer and pull it off.",
+      "Wire-brush the hub face and wipe on a thin film of anti-seize so the new disc doesn't rust on.",
+      "Fit the new disc, cleaning both faces with brake cleaner. A wheel nut will hold it in place.",
+      "Clean the carrier with brake cleaner and a wire brush, refit it over the disc and torque both bolts to 98 N·m (72 lb·ft). Use thread lock if you like.",
+      "Fit the new pad clips (check which way they face), grease the pad ears lightly, and fit the pads the right way round.",
+      "Grease the slide pins and refit them.",
+      "Put a little grease where the caliper touches the pad backs, refit the caliper, and torque the two bolts to 34 N·m (25 lb·ft).",
+      "Clean the disc faces once more, refit the wheel and torque the nuts to 103 N·m.",
+      "Close the reservoir cap. Pump the brake pedal several times until it's firm BEFORE driving. The first presses go to the floor.",
+      "Check the fluid level, then bed the pads in with a few gentle stops from 30 mph."
+    ],
+    "notes": [
+      "Torques: caliper bolts 34 N·m (350 kgf·cm, 25 ft·lbf), caliper carrier bolts 98 N·m (999 kgf·cm, 72 ft·lbf), wheel nuts 103 N·m. The first two come from owner notes in Toyota repair-manual format. Their exact source manual hasn't been confirmed for the ANH20, so check them against your own manual if you have one."
+    ],
+    "warnings": [
+      "Brakes are safety-critical. If you're unsure about anything, get a garage to check your work.",
+      "Brake fluid strips paint, so wipe up any drips straight away."
+    ],
+    "src": [
+      "owner-brakes",
+      "om-201209"
+    ],
+    "conf": "community"
   }
 ]

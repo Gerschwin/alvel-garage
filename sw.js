@@ -1,7 +1,7 @@
 // Offline cache. Bump VERSION (same as APP_VERSION in app.js) on each release so the old cache is replaced.
-const VERSION = '0.2.0', CACHE = 'alvel-garage-' + VERSION;
+const VERSION = '0.3.0', CACHE = 'alvel-garage-' + VERSION;
 const CORE = ['./', 'index.html', 'app.js', 'app.css', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png',
-  ...['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'resources', 'sources'].map(f => `data/${f}.json`)];
+  ...['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'resources', 'sources'].map(f => `data/${f}.json`)];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE))); });
 self.addEventListener('activate', e => e.waitUntil(
   caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
