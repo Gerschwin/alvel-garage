@@ -1,0 +1,130 @@
+[
+  {
+    "id": "oil-change",
+    "title": "Engine oil & filter change",
+    "engine": ["2AZ-FE"],
+    "difficulty": 2,
+    "time": "45 min",
+    "tools": ["Ramps or a trolley jack and axle stands", "Socket set", "Oil filter wrench", "Drain tray (6 L or more)", "Funnel", "Gloves and rags"],
+    "parts": ["4.5 L of 0W-20 (or 5W-30) API SN/ILSAC oil – 4.3 L is needed", "Oil filter (club-listed 15601-76008; check against your frame number)", "New drain plug washer"],
+    "steps": [
+      "Run the engine for a few minutes so the oil is warm, not hot. Park on level ground, handbrake on, engine off.",
+      "Raise the front on ramps, or jack it up at the proper lifting point and support it on axle stands. Never work under it on the jack alone.",
+      "Take the oil filler cap off so the oil drains freely.",
+      "Put the tray under the sump, undo the drain plug and let it drain fully (10 minutes or so).",
+      "Clean the plug, fit a new washer, and refit it firmly. Don't over-tighten into the aluminium sump.",
+      "Move the tray under the filter and unscrew it. Some oil will run out.",
+      "Wipe the filter mounting face. Smear clean oil on the new filter's rubber seal, screw it on until the seal touches, then about another ¾ turn by hand.",
+      "Lower the car so it's level. Pour in about 3.8 L, wait a minute, then check the dipstick.",
+      "Top up a little at a time towards 4.3 L until the level is near the top mark. Don't overfill.",
+      "Refit the filler cap. Start the engine and let it idle for a minute; the oil light should go out within seconds. Look for leaks at the plug and filter.",
+      "Switch off, wait at least 5 minutes, then re-check the dipstick and top up if needed.",
+      "Reset the maintenance reminder if one is set, and log it in My Car."
+    ],
+    "warnings": ["Hot oil burns. Let it cool if you've just driven far.", "Take used oil to the council tip; it's illegal to pour it away."],
+    "src": ["om-201209", "club-parts"],
+    "conf": "community"
+  },
+  {
+    "id": "cvt-fluid",
+    "title": "CVT fluid drain, fill and level check",
+    "engine": ["2AZ-FE"],
+    "difficulty": 4,
+    "time": "2–3 hours",
+    "tools": ["Ramps or jack and stands (car must end up level)", "24 mm socket and a long extension (filler bolt)", "6 mm hex key/bit (drain and overflow tube)", "Fluid pump or long funnel and tube", "Wire jumper for the OBD socket", "Thermometer or OBD reader that shows CVT temperature (useful)"],
+    "parts": ["Toyota CVT Fluid TC (or FE on later cars) – about 4–5 L per drain & fill; 10–12 L for a thorough change", "Filler bolt gasket 90430-18008", "Drain plug gasket 90430-12008"],
+    "steps": [
+      "Get the car level and safely supported. The level check only works if the car is level.",
+      "Undo the 24 mm filler bolt first. If you drain it and then can't open the filler, you're stranded.",
+      "Remove the 6 mm hex drain plug and let it drain into the tray. Expect about 1.5 L at first.",
+      "Undo the overflow tube inside the drain hole (also 6 mm hex). Another 0.5–1 L comes out. Roughly 2–4 L in total, which is only part of the 8.7 L in the system.",
+      "Refit the overflow tube and drain plug, and fill with the same amount of new fluid through the filler hole.",
+      "To change more of it: start the engine, move slowly through P-R-N-D with your foot on the brake, then drain and refill again. Repeat until the fluid coming out looks clean.",
+      "Level check, fluid must be 35–45 °C: start cold and slightly overfilled. With the ignition on and the A/C off, then ignition off, bridge OBD pins 4 and 13 with the wire.",
+      "Start the engine. Move the selector N→D→N→D quickly (under 1.5 s each) until the D light stays on for 2 s. That's fluid-temperature mode. Remove the jumper and go back to P.",
+      "D light off = too cold, wait. D light flashing = too hot, let it cool and start again. D light steady = in the window.",
+      "With the D light steady and the engine running, remove the drain plug. Let the excess run out of the overflow tube until it just drips, then refit the plug with a new gasket. If nothing comes out, it's low: add fluid and redo the check.",
+      "Refit the filler bolt with a new gasket. Test drive, and look for leaks."
+    ],
+    "warnings": ["Use CVT fluid only. ATF will damage the CVT.", "On very high-mileage cars with original fluid, some garages advise doing one drain & fill at a time over a few weeks rather than changing everything at once."],
+    "src": ["osenmu-cvt", "minkara-cvt", "om-201209", "d1-cvt-judder"],
+    "conf": "community"
+  },
+  {
+    "id": "key-battery",
+    "title": "Smart key battery",
+    "difficulty": 1,
+    "time": "5 min",
+    "tools": ["Small flat screwdriver with tape round the tip"],
+    "parts": ["CR1632 lithium coin cell"],
+    "steps": [
+      "Slide out the mechanical key blade.",
+      "Gently prise the cover apart at the slot. The taped tip stops it scratching.",
+      "Take out the old cell and fit the new one + side up.",
+      "Clip the cover back together and refit the blade.",
+      "Press a button. The LED on the key should light."
+    ],
+    "warnings": ["Keep coin cells away from children. Swallowing one is extremely dangerous."],
+    "src": ["om-201209"],
+    "conf": "official"
+  },
+  {
+    "id": "fuse-check",
+    "title": "Checking and replacing a fuse",
+    "difficulty": 1,
+    "time": "10 min",
+    "tools": ["Fuse puller (in the engine bay fuse box)"],
+    "parts": ["Spare mini fuses of the right ratings"],
+    "steps": [
+      "Turn the power switch off.",
+      "Find the right fuse in the Fuses section of this app. There are 2 boxes under the bonnet (3 on the hybrid) and one in each front footwell.",
+      "Pull the fuse with the puller and look at the metal link. A gap or blackening means it's blown.",
+      "Fit a fuse of exactly the same rating.",
+      "If it blows again, there's a fault in that circuit. Get it looked at rather than fitting a bigger fuse."
+    ],
+    "warnings": ["Never fit a higher-rated fuse or bridge a fuse holder. That's a fire risk."],
+    "src": ["om-201209"],
+    "conf": "official"
+  },
+  {
+    "id": "wheel-change",
+    "title": "Changing a wheel",
+    "difficulty": 2,
+    "time": "30 min",
+    "tools": ["Jack and wheel brace (supplied)", "Torque wrench (for the final tightening)"],
+    "parts": [],
+    "steps": [
+      "Stop somewhere safe and level, hazards on, handbrake on, P selected. Get passengers out and well away from traffic.",
+      "Chock the wheel diagonally opposite.",
+      "Loosen the wheel nuts half a turn while the tyre is still on the ground.",
+      "Jack the car up at the correct jacking point (see the owner's manual diagram) until the tyre clears the ground.",
+      "Remove the nuts and the wheel. Fit the spare, then run the nuts on by hand, tapered side towards the wheel.",
+      "Lower the car and tighten the nuts in a criss-cross pattern to 103 N·m (76 lb·ft).",
+      "Space-saver spare: 420 kPa (61 psi), keep to low speeds, and get the proper tyre refitted soon.",
+      "Re-check the nut torque after a short drive."
+    ],
+    "warnings": ["Don't use the car's jack with anyone under the car. For maintenance use a garage jack and axle stands at the proper lift points."],
+    "src": ["om-201209"],
+    "conf": "official"
+  },
+  {
+    "id": "sliding-door",
+    "title": "Power sliding door won't open or close properly",
+    "difficulty": 3,
+    "time": "15 min – 4 hours",
+    "tools": ["Battery charger or multimeter", "10 mm spanner (battery terminal)", "Silicone grease"],
+    "parts": ["Possibly a door cable or motor assembly"],
+    "steps": [
+      "Check the 12 V battery first. Low voltage is a common cause of power doors misbehaving. Charge it or test it (12.4 V or more at rest).",
+      "Check the PSD RH / PSD LH and ECU-B fuses (see Fuses).",
+      "Try a reset: disconnect the battery negative for a minute, reconnect it, switch the power door main switch on, then open and close the door fully with the button.",
+      "Listen while operating it. Motor runs but the door doesn't move → probably a broken cable. Silence from the motor → the motor, its wiring, or a fuse.",
+      "Door stops partway or jams → often a worn outer sheath on the cable, binding in the pulley system, or dry runners.",
+      "Clean the door runners and lightly grease them. Some owners also put silicone grease on the cable drum splines when refitting.",
+      "Cable replacement is a big job (owners report about 4 hours). Get the right part for your frame number and follow a video for your generation."
+    ],
+    "warnings": ["Keep hands clear of a power door. It can close with real force when it's re-learning its travel."],
+    "src": ["alphard-guide-doors", "club-doors", "club-buying"],
+    "conf": "community"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Power sliding doors sticking, stopping partway, or dead",
+    "area": "Body",
+    "symptoms": "Door stops partway, motor runs but the door doesn't move, door won't latch, or no response at all.",
+    "cause": "Low 12 V battery voltage, dry runners, a worn cable sheath binding in the pulleys, a broken cable, or a failed motor.",
+    "fix": "Battery and fuses first, then a reset and lubrication. Replace the cable or motor if those don't fix it.",
+    "guide": "sliding-door",
+    "src": ["alphard-guide-doors", "club-doors", "club-buying"],
+    "conf": "community"
+  },
+  {
+    "title": "CVT judder or shudder when pulling away",
+    "area": "Transmission",
+    "engine": ["2AZ-FE"],
+    "symptoms": "Shudder or vibration at low speed under light throttle, sometimes a whine.",
+    "cause": "Worn or never-changed CVT fluid. Toyota lists no change interval, so many imports arrive on original fluid at 100,000+ km.",
+    "fix": "Japanese garages report judder curing after a fluid change (often a full machine exchange). Do it with the right fluid (CVT TC/FE) and a proper level check.",
+    "guide": "cvt-fluid",
+    "src": ["d1-cvt-judder", "minkara-cvt", "om-201209"],
+    "conf": "community"
+  },
+  {
+    "title": "Knocking from the rear over bumps",
+    "area": "Suspension",
+    "symptoms": "Clunk or knock from the back on uneven roads.",
+    "cause": "UK buying guides point to the rear axle (torsion beam) mounting bushes.",
+    "fix": "Inspect the bushes and replace any that are worn.",
+    "src": ["club-buying"],
+    "conf": "community"
+  },
+  {
+    "title": "Front knock or rattle over small bumps",
+    "area": "Suspension",
+    "symptoms": "Light knocking from the front, often on broken road surfaces.",
+    "cause": "Worn anti-roll bar drop links or bar bushes, common on heavy MPVs.",
+    "fix": "Replace the drop links and D-bushes (part numbers in Parts).",
+    "src": ["club-parts"],
+    "conf": "community"
+  },
+  {
+    "title": "2AZ-FE oil consumption",
+    "area": "Engine",
+    "engine": ["2AZ-FE", "2AZ-FXE"],
+    "symptoms": "Oil level drops noticeably between changes, with no visible leak.",
+    "cause": "A known 2AZ-FE issue with oil control rings and clogged return holes, mostly reported on US-market Camrys and RAV4s. UK club members say JDM Alphards rarely show it.",
+    "fix": "Check the dipstick monthly. If the car is using more than about 1 L per 1,000 miles, it needs proper investigation (piston rings).",
+    "src": ["wiki-az", "club-reliability"],
+    "conf": "community"
+  },
+  {
+    "title": "2AZ-FE head bolt threads pulling out of the block",
+    "area": "Engine",
+    "engine": ["2AZ-FE"],
+    "symptoms": "Coolant loss and overheating, like a head gasket failure.",
+    "cause": "Stripped head bolt threads in the aluminium block, usually the rear bolts. Mainly affects earlier blocks; not confirmed whether 2008+ ANH20 engines are affected.",
+    "fix": "Thread inserts (e.g. Time-Sert) or a replacement block.",
+    "src": ["wiki-az"],
+    "conf": "unverified"
+  },
+  {
+    "title": "Hard-to-reach rear spark plugs (V6)",
+    "area": "Engine",
+    "engine": ["2GR-FE"],
+    "symptoms": "Not a fault, but a known labour cost.",
+    "cause": "The rear bank sits under the intake plenum.",
+    "fix": "Budget for the plenum to come off. Do all six plugs at once.",
+    "src": ["club-reliability"],
+    "conf": "community"
+  },
+  {
+    "title": "Only FM 76–90 MHz on the radio",
+    "area": "Import",
+    "symptoms": "Can't tune UK FM stations (88–108 MHz).",
+    "cause": "Japanese FM uses 76–90 MHz.",
+    "fix": "Fit a band expander, or replace the head unit. Many importers fit an expander before sale; check it works.",
+    "src": ["club-buying"],
+    "conf": "community"
+  }
+]

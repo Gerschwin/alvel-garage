@@ -1,0 +1,478 @@
+{
+  "groups": [
+    {
+      "id": "fluids",
+      "title": "Fluids & capacities",
+      "intro": "Capacities are Toyota's reference figures for a change, not a full dry fill. Always finish by checking the level.",
+      "items": [
+        {
+          "label": "Engine oil – grade",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE",
+                "2AZ-FXE"
+              ],
+              "value": "0W-20 (factory fill, best economy). 5W-20, 5W-30 or 10W-30 also approved.",
+              "note": "Look for API SN (or SM) with the ILSAC starburst. The 2010 edition lists SM/SL grades; the 2012 edition lists SN.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "value": "5W-20 factory fill (2010 edition) / 0W-20 (2012 edition). 5W-30 or 10W-30 also approved.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Engine oil – capacity",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE",
+                "2AZ-FXE"
+              ],
+              "value": "4.3 L with filter · 4.1 L oil only",
+              "note": "Check on the dipstick after warming up, stopping, and waiting at least 5 minutes.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "value": "6.1 L with filter · 5.7 L oil only",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Coolant",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE"
+              ],
+              "value": "Toyota Super Long Life Coolant (pink) – 8.4 L (2012 ed.) / 8.2 L (2010 ed.)",
+              "note": "50% strength protects to −35 °C, 30% to −12 °C. Don't mix with green/blue coolants.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "value": "Toyota Super Long Life Coolant – 10.6 L",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2AZ-FXE"
+              ],
+              "value": "Toyota Super Long Life Coolant – engine 9.1 L, plus a separate 3.3 L inverter/motor loop",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Transmission fluid",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE"
+              ],
+              "value": "Toyota CVT Fluid TC (2012 ed. also allows CVT Fluid FE) – 8.7 L total",
+              "note": "A drain only gives about 4.3 L, so a full change takes repeated drain & fills. Never put ATF in the CVT. See the CVT fluid guide.",
+              "src": [
+                "om-201209",
+                "om-201004",
+                "minkara-cvt",
+                "osenmu-cvt"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "drive": "FF",
+              "value": "Toyota ATF WS – 6.5 L",
+              "note": "ATF WS is sometimes scarce in the UK. Lexus parts counters often have it.",
+              "src": [
+                "om-201209",
+                "club-atf"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2GR-FE"
+              ],
+              "drive": "4WD",
+              "value": "Toyota ATF WS – 6.7 L",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            },
+            {
+              "engine": [
+                "2AZ-FXE"
+              ],
+              "value": "Hybrid transaxle: Toyota ATF WS 4.2 L · rear motor transaxle: ATF WS 1.8 L",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Rear differential (4WD)",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE",
+                "2GR-FE"
+              ],
+              "drive": "4WD",
+              "value": "Toyota Hypoid Gear Oil SX, API GL-5 85W-90 – 0.5 L",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Transfer case (4WD)",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE",
+                "2GR-FE"
+              ],
+              "drive": "4WD",
+              "value": "Toyota Hypoid Gear Oil SX, API GL-5 85W-90 – 0.45 L",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Brake fluid",
+          "rows": [
+            {
+              "value": "Toyota Brake Fluid 2500H-A (2012 ed.) / 2500H (2010 ed.)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official",
+              "note": "Toyota's own glycol fluid. UK garages normally use a good DOT 4 in its place (that equivalence isn't stated in the manual)."
+            }
+          ]
+        },
+        {
+          "label": "Fuel tank",
+          "rows": [
+            {
+              "value": "65 L",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Washer bottle",
+          "rows": [
+            {
+              "value": "2.5 L",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wheels",
+      "title": "Wheels & tyres",
+      "items": [
+        {
+          "label": "Tyre sizes and cold pressures",
+          "rows": [
+            {
+              "value": "215/65R16 98H on 16×6½J – 240 kPa (35 psi); hybrid 250 kPa (36 psi)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "value": "215/60R17 96H on 17×7J – 240 kPa (35 psi)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "value": "235/50R18 97V on 18×7½J – 240 kPa (35 psi)",
+              "note": "Toyota says snow chains can't be used with 18s.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            },
+            {
+              "value": "245/40R19 94W on 19×8½J (G's models) – 240 kPa (35 psi)",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            },
+            {
+              "value": "Space-saver spare T165/80R17 104M on 17×4T – 420 kPa (61 psi)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Wheel nut torque",
+          "rows": [
+            {
+              "value": "103 N·m (76 lb·ft)",
+              "note": "Re-check after the first few miles when wheels have been off.",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Stud pattern / nut",
+          "rows": [
+            {
+              "value": "5 × 114.3 mm, M12 × 1.5 nuts (21 mm socket)",
+              "note": "Standard for Toyota vans of this size. Confirm before ordering aftermarket wheels.",
+              "src": [],
+              "conf": "unverified"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "title": "Bulbs & electrical",
+      "items": [
+        {
+          "label": "Headlight high beam",
+          "rows": [
+            {
+              "value": "HB3, 60 W",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Headlight low beam",
+          "rows": [
+            {
+              "value": "HID (discharge), 35 W. The bulb type isn't given in the manual, so read it off the old bulb before ordering.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Front fog",
+          "rows": [
+            {
+              "value": "H11, 55 W (2012 edition)",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            },
+            {
+              "value": "HB4, 51 W (2010 edition, pre-facelift)",
+              "src": [
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Front & rear indicators",
+          "rows": [
+            {
+              "value": "21 W (side repeaters, brake lights and high-level brake light are LED)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Side/tail lights",
+          "rows": [
+            {
+              "value": "5 W (side lights, tail lights, number plate lights)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Reversing lights",
+          "rows": [
+            {
+              "value": "16 W",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Interior",
+          "rows": [
+            {
+              "value": "Front/rear map lights and vanity mirror lights 8 W · boot light and door courtesy lights 5 W · others LED",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Smart key battery",
+          "rows": [
+            {
+              "value": "CR1632 lithium coin cell",
+              "src": [
+                "om-201209"
+              ],
+              "conf": "official"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brakes",
+      "title": "Brakes",
+      "items": [
+        {
+          "label": "Brake pedal",
+          "rows": [
+            {
+              "value": "Free play 1–6 mm. Gap to floor with 490 N (50 kgf) pressed, engine running: petrol 124 mm or more, hybrid 160 mm.",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        },
+        {
+          "label": "Parking brake (foot)",
+          "rows": [
+            {
+              "value": "4–6 clicks at 300 N (30.6 kgf)",
+              "src": [
+                "om-201209",
+                "om-201004"
+              ],
+              "conf": "official"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plugs",
+      "title": "Ignition",
+      "items": [
+        {
+          "label": "Spark plugs",
+          "rows": [
+            {
+              "engine": [
+                "2AZ-FE"
+              ],
+              "value": "Iridium: Denso SK20R11 or NGK IFR6A11, gap about 1.1 mm, about 19 N·m (14 lb·ft)",
+              "note": "These are the usual 2AZ-FE plugs (Camry, RAV4, Estima). Not yet confirmed against a Toyota parts catalogue for the ANH20.",
+              "src": [
+                "ricks-2az"
+              ],
+              "conf": "unverified"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

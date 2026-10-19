@@ -1,0 +1,100 @@
+[
+  {
+    "id": "om-201209",
+    "title": "Toyota Alphard owner's manual (Japanese), Sept 2012 – Oct 2013 edition",
+    "url": "https://manual.toyota.jp/pdf/alphard/alphard_201209.pdf",
+    "kind": "official",
+    "note": "Section 6-1 (仕様一覧) for fluids, capacities, tyres, bulbs; 4-2 for fuses, key battery, wheel nut torque. Covers ANH20W/ANH25W, GGH20W/GGH25W and ATH20W hybrid."
+  },
+  {
+    "id": "om-201004",
+    "title": "Toyota Alphard owner's manual (Japanese), Apr 2010 – Sept 2011 edition",
+    "url": "https://manual.toyota.jp/pdf/alphard/alphard_201004.pdf",
+    "kind": "official",
+    "note": "Pre-facelift petrol edition. Differs from 2012 edition on oil grades (SM vs SN), 2AZ coolant (8.2 L vs 8.4 L), CVT fluid (TC only), front fog bulb (HB4 vs H11), brake fluid (2500H vs 2500H-A)."
+  },
+  {
+    "id": "toyota-manual-index",
+    "title": "Toyota Japan online owner's manual index – Alphard",
+    "url": "https://manual.toyota.jp/alphard/",
+    "kind": "official",
+    "note": "Lists every edition from 2010/04 onwards. Nothing online for 2008/05 – 2010/03 cars."
+  },
+  {
+    "id": "club-parts",
+    "title": "UK Alphard Club – Servicing parts / numbers (2008 to 2015)",
+    "url": "https://uk.alphardclub.com/tutorials/article/11-toyota-alphard-vellfire-servicing-parts-numbers-2008-to-2015/",
+    "kind": "community",
+    "note": "Owner-compiled part numbers. The page itself says cross-check before buying."
+  },
+  {
+    "id": "club-buying",
+    "title": "UK Alphard Club – Buying guide and Japanese vehicle history",
+    "url": "https://uk.alphardclub.com/tutorials/article/7-alphard-buying-guide-and-japanese-vehicle-history/",
+    "kind": "community"
+  },
+  {
+    "id": "club-atf",
+    "title": "UK Alphard Club – Transmission fluid change for the ANH20",
+    "url": "https://uk.alphardclub.com/tutorials/article/21-transmission-fluid-change-for-the-anh20-alphard-vellfire/",
+    "kind": "community",
+    "note": "Mostly about ATF WS for the 3.5 V6 and where to buy it in the UK."
+  },
+  {
+    "id": "club-reliability",
+    "title": "UK Alphard Club – 2.4 vs 3.0 reliability and common issues (forum)",
+    "url": "https://uk.alphardclub.com/forums/topic/8060-24-vs-30-reliability-and-common-issues/",
+    "kind": "community"
+  },
+  {
+    "id": "club-doors",
+    "title": "UK Alphard Club – Power sliding door threads",
+    "url": "https://uk.alphardclub.com/forums/topic/3515-power-sliding-doors/",
+    "kind": "community"
+  },
+  {
+    "id": "alphard-guide-doors",
+    "title": "The Toyota Alphard Guide – How to fix a sliding door",
+    "url": "https://www.toyotaalphardguide.com/how-to-fix-a-sliding-door/",
+    "kind": "community"
+  },
+  {
+    "id": "osenmu-cvt",
+    "title": "osenmu.com – 20 Alphard CVT fluid DIY drain & fill (Japanese)",
+    "url": "https://www.osenmu.com/index.php/2022/05/13/13654/",
+    "kind": "community",
+    "note": "Bolt sizes, gasket part numbers and the OBD pin 4–13 level-check procedure."
+  },
+  {
+    "id": "minkara-cvt",
+    "title": "Minkara – CVT fluid change, 20 series Alphard (Japanese)",
+    "url": "https://minkara.carview.co.jp/userid/1366470/car/2717046/6299458/note.aspx",
+    "kind": "community",
+    "note": "About 4.3 L comes out on a drain, roughly half the 8.7 L total."
+  },
+  {
+    "id": "d1-cvt-judder",
+    "title": "D1 Chemical – Alphard CVT fluid change to cure judder (Japanese)",
+    "url": "https://d1-chemical.com/examples/view/231",
+    "kind": "trade"
+  },
+  {
+    "id": "wiki-az",
+    "title": "Wikipedia – Toyota AZ engine",
+    "url": "https://en.wikipedia.org/wiki/Toyota_AZ_engine",
+    "kind": "reference"
+  },
+  {
+    "id": "gov-mot",
+    "title": "GOV.UK – Check MOT history",
+    "url": "https://www.gov.uk/check-mot-history",
+    "kind": "official"
+  },
+  {
+    "id": "ricks-2az",
+    "title": "Rick's Free Auto Repair Advice – Toyota 2.4 (2AZ-FE) firing order and spark plug gap",
+    "url": "https://ricksfreeautorepairadvice.com/toyota-2-4-liter-firing-order-and-spark-plug-gap-2az-fe/",
+    "kind": "community",
+    "note": "Generic 2AZ-FE data, written for US models."
+  }
+]

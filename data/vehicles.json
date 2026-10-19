@@ -1,0 +1,76 @@
+{
+  "generation": {
+    "name": "20 series Alphard / Vellfire",
+    "built": "May 2008 – Jan 2015",
+    "facelift": "Late 2011 (owner's manual editions change at 2011/10)",
+    "note": "Alphard (Toyopet dealers) and Vellfire (Netz dealers) are the same vehicle with different front styling and trim names. Every spec here applies to both."
+  },
+  "models": [
+    {
+      "code": "ANH20W",
+      "engine": "2AZ-FE",
+      "drive": "FF",
+      "label": "2.4 petrol, front-wheel drive",
+      "trans": "CVT (Super CVT-i)",
+      "frame": "ANH20",
+      "prefix": "DBA-",
+      "primary": true
+    },
+    {
+      "code": "ANH25W",
+      "engine": "2AZ-FE",
+      "drive": "4WD",
+      "label": "2.4 petrol, four-wheel drive",
+      "trans": "CVT (Super CVT-i)",
+      "frame": "ANH25",
+      "prefix": "DBA-",
+      "primary": true
+    },
+    {
+      "code": "GGH20W",
+      "engine": "2GR-FE",
+      "drive": "FF",
+      "label": "3.5 V6 petrol, front-wheel drive",
+      "trans": "6-speed automatic",
+      "frame": "GGH20",
+      "prefix": "DBA-"
+    },
+    {
+      "code": "GGH25W",
+      "engine": "2GR-FE",
+      "drive": "4WD",
+      "label": "3.5 V6 petrol, four-wheel drive",
+      "trans": "6-speed automatic",
+      "frame": "GGH25",
+      "prefix": "DBA-"
+    },
+    {
+      "code": "ATH20W",
+      "engine": "2AZ-FXE",
+      "drive": "4WD",
+      "label": "2.4 hybrid, E-Four (electric rear axle)",
+      "trans": "Hybrid transaxle (eCVT)",
+      "frame": "ATH20",
+      "prefix": "DAA-"
+    }
+  ],
+  "engines": {
+    "2AZ-FE": {
+      "name": "2.4 L inline-4, DOHC 16v, VVT-i, timing chain",
+      "fuel": "Unleaded regular (Japanese regular is about 90 RON, so UK 95 is fine)"
+    },
+    "2GR-FE": {
+      "name": "3.5 L V6, DOHC 24v, dual VVT-i, timing chain",
+      "fuel": "Premium unleaded recommended (regular usable with reduced performance)"
+    },
+    "2AZ-FXE": {
+      "name": "2.4 L inline-4, Atkinson-cycle hybrid engine",
+      "fuel": "Unleaded regular"
+    }
+  },
+  "prefixes": {
+    "DBA-": "Petrol car meeting Japan's 2005 emissions standard",
+    "CBA-": "Petrol car meeting Japan's 2000 emissions standard (older cars)",
+    "DAA-": "Hybrid car meeting Japan's 2005 emissions standard"
+  }
+}

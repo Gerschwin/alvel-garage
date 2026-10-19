@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AlVel Garage</title>
+<meta name="description" content="Owner's workshop companion for the 20-series Toyota Alphard and Vellfire: specs, fluids, service schedule, fuses, guides, known faults and a service log.">
+<meta name="theme-color" content="#1F3A5F">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head><body>
+<header class="top">
+  <a href="#/" class="brand">AlVel Garage</a>
+  <button id="carBtn" class="car-pill" type="button" aria-label="Choose your model">Choose model</button>
+</header>
+<div class="searchbar"><input id="q" type="search" placeholder="Search specs, fuses, guides, faults…" autocomplete="off" aria-label="Search"></div>
+<main id="view" tabindex="-1"></main>
+<nav class="tabs" aria-label="Sections">
+  <a href="#/" data-tab="home">Home</a>
+  <a href="#/specs" data-tab="specs">Specs</a>
+  <a href="#/service" data-tab="service">Service</a>
+  <a href="#/guides" data-tab="guides">Guides</a>
+  <a href="#/mycar" data-tab="mycar">My Car</a>
+</nav>
+<dialog id="carDlg"><form method="dialog"><h2>Your model</h2><div id="carList"></div><button class="btn ghost" value="cancel">Close</button></form></dialog>
+<script src="app.js"></script>
+</body></html>

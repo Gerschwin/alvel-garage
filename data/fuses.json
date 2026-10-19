@@ -1,0 +1,515 @@
+{
+ "intro": "From the 2012 owner's manual. Japanese cars are right-hand drive, so the driver's footwell box is on the right. Switch the engine (power switch) off before pulling fuses, and use the puller in the box. Only ever fit a fuse of the same rating.",
+ "src": [
+  "om-201209"
+ ],
+ "boxes": [
+  {
+   "name": "Engine bay – box A",
+   "where": "Engine bay. Press the tab and lift the lid.",
+   "fuses": [
+    [
+     1,
+     "HORN",
+     10,
+     "Horn"
+    ],
+    [
+     2,
+     "STRG LCK",
+     20,
+     "Steering lock"
+    ],
+    [
+     3,
+     "AMP NO.2",
+     30,
+     "Audio amplifier"
+    ],
+    [
+     4,
+     "AMP NO.1",
+     30,
+     "Audio amplifier"
+    ],
+    [
+     5,
+     "ECU-B3",
+     7.5,
+     "Smart key ECU"
+    ],
+    [
+     6,
+     "ECU-B2",
+     7.5,
+     "Air conditioning"
+    ],
+    [
+     7,
+     "S/HORN",
+     10,
+     "Security horn"
+    ],
+    [
+     8,
+     "DEICER",
+     20,
+     "Windscreen wiper de-icer"
+    ],
+    [
+     9,
+     "FOG",
+     20,
+     "Front fog lights"
+    ],
+    [
+     10,
+     "H-LP RH / H-LP RL",
+     15,
+     "Right headlight (high beam with auto high beam, low beam without)"
+    ],
+    [
+     11,
+     "H-LP LH / H-LP LL",
+     15,
+     "Left headlight (high beam with auto high beam, low beam without)"
+    ],
+    [
+     12,
+     "H-LP RL",
+     15,
+     "Right headlight low beam (cars with auto high beam only)"
+    ],
+    [
+     13,
+     "H-LP LL / H-LP RH",
+     15,
+     "Left low beam (with auto high beam) / right high beam (without)"
+    ],
+    [
+     14,
+     "H-LP HI NO.2 / H-LP LH",
+     "20 / 15",
+     "Auto high beam (with auto high beam) / left high beam (without)"
+    ]
+   ]
+  },
+  {
+   "name": "Engine bay – box B",
+   "where": "Engine bay. Press the tab and lift the lid.",
+   "fuses": [
+    [
+     1,
+     "ABS NO.2",
+     30,
+     "VSC actuator (petrol)"
+    ],
+    [
+     2,
+     "DEF",
+     30,
+     "Heated rear window"
+    ],
+    [
+     3,
+     "EFI",
+     20,
+     "Engine management"
+    ],
+    [
+     4,
+     "CAPACITOR",
+     15,
+     "Hybrid system (hybrid)"
+    ],
+    [
+     5,
+     "ECU-B",
+     10,
+     "Power sliding doors"
+    ],
+    [
+     6,
+     "DOME",
+     7.5,
+     "Interior lights"
+    ],
+    [
+     7,
+     "RAD NO.1",
+     15,
+     "Navigation"
+    ],
+    [
+     8,
+     "MIR HTR",
+     10,
+     "Mirror heaters"
+    ],
+    [
+     9,
+     "SLOPE NO.2 / ABS MAIN1",
+     "30 / 10",
+     "Wheelchair slope (petrol) / brakes (hybrid)"
+    ],
+    [
+     10,
+     "ABS MAIN2",
+     10,
+     "Brakes (hybrid)"
+    ],
+    [
+     11,
+     "ETC-S",
+     10,
+     "Engine management"
+    ],
+    [
+     12,
+     "AM2 NO.2",
+     7.5,
+     "Body ECU"
+    ],
+    [
+     13,
+     "TRN HAZ",
+     15,
+     "Indicators / hazards"
+    ],
+    [
+     14,
+     "IG2",
+     15,
+     "Injection"
+    ],
+    [
+     15,
+     "ABS MAIN3",
+     15,
+     "Brakes (hybrid)"
+    ],
+    [
+     16,
+     "FR DOOR",
+     30,
+     "Body ECU"
+    ],
+    [
+     17,
+     "A/F / A/C W/P",
+     "30 / 10",
+     "Air-fuel sensor heater (petrol) / A/C water pump (hybrid)"
+    ]
+   ]
+  },
+  {
+   "name": "Engine bay – box C (hybrid only)",
+   "where": "Remove the engine bay cover first.",
+   "engine": [
+    "2AZ-FXE"
+   ],
+   "fuses": [
+    [
+     1,
+     "EFI NO.1",
+     7.5,
+     "Hybrid system"
+    ],
+    [
+     2,
+     "OIL PMP",
+     10,
+     "Hybrid system"
+    ],
+    [
+     3,
+     "PCU",
+     10,
+     "Hybrid system"
+    ],
+    [
+     4,
+     "IGCT NO.1",
+     7.5,
+     "Hybrid system"
+    ],
+    [
+     5,
+     "INV W/P",
+     10,
+     "Inverter water pump"
+    ],
+    [
+     6,
+     "IGCT NO.2",
+     7.5,
+     "Hybrid system"
+    ],
+    [
+     7,
+     "BATT FAN",
+     10,
+     "Hybrid battery fan"
+    ]
+   ]
+  },
+  {
+   "name": "Driver's footwell (right)",
+   "where": "Remove the cover.",
+   "fuses": [
+    [
+     1,
+     "FR WIP",
+     30,
+     "Front wipers"
+    ],
+    [
+     2,
+     "SEAT HTR RH",
+     10,
+     "Driver's seat heater"
+    ],
+    [
+     3,
+     "RH ECU-IG",
+     10,
+     "Air conditioning"
+    ],
+    [
+     4,
+     "P/SEAT RL",
+     25,
+     "Second-row seat, passenger side"
+    ],
+    [
+     5,
+     "P/SEAT RR",
+     25,
+     "Second-row seat, driver side"
+    ],
+    [
+     6,
+     "ECU-IG3",
+     15,
+     "Second-row seat heater, driver side"
+    ],
+    [
+     7,
+     "P/POINT",
+     15,
+     "Accessory socket"
+    ],
+    [
+     8,
+     "CIG",
+     15,
+     "Accessory socket"
+    ],
+    [
+     9,
+     "RAD NO.2",
+     7.5,
+     "Navigation"
+    ],
+    [
+     10,
+     "ECU-ACC",
+     7.5,
+     "Door mirrors"
+    ],
+    [
+     11,
+     "IGN",
+     10,
+     "Ignition"
+    ],
+    [
+     12,
+     "MET",
+     7.5,
+     "Instruments"
+    ],
+    [
+     13,
+     "PSB",
+     30,
+     "Pre-crash seatbelts"
+    ],
+    [
+     14,
+     "RR FOG",
+     7.5,
+     "Rear fog light"
+    ],
+    [
+     15,
+     "P/W FR",
+     20,
+     "Power window"
+    ],
+    [
+     16,
+     "P/SEAT RH",
+     30,
+     "Driver's power seat"
+    ],
+    [
+     17,
+     "AM1",
+     7.5,
+     "Driving position memory"
+    ],
+    [
+     18,
+     "STOP",
+     15,
+     "Brake lights"
+    ],
+    [
+     19,
+     "OBD",
+     7.5,
+     "Diagnostic (OBD) socket"
+    ],
+    [
+     20,
+     "PSD RH",
+     30,
+     "Power sliding door, right"
+    ],
+    [
+     21,
+     "P/W RR",
+     20,
+     "Power window"
+    ]
+   ]
+  },
+  {
+   "name": "Passenger footwell (left)",
+   "where": "Remove the cover.",
+   "fuses": [
+    [
+     1,
+     "LH ECU-IG",
+     10,
+     "Body ECU, power sliding doors"
+    ],
+    [
+     2,
+     "SEAT HTR LH",
+     10,
+     "Seat heater"
+    ],
+    [
+     3,
+     "GAUGE NO.2",
+     10,
+     "Reversing lights"
+    ],
+    [
+     4,
+     "STP RR",
+     7.5,
+     "Brake light"
+    ],
+    [
+     5,
+     "STP HI MT",
+     7.5,
+     "High-level brake light"
+    ],
+    [
+     6,
+     "STP RL",
+     7.5,
+     "Brake light"
+    ],
+    [
+     7,
+     "RR WIP",
+     15,
+     "Rear wiper"
+    ],
+    [
+     8,
+     "GAUGE NO.1",
+     10,
+     "Instruments, wiper de-icer"
+    ],
+    [
+     9,
+     "PANEL",
+     10,
+     "Switch illumination"
+    ],
+    [
+     10,
+     "TAIL2",
+     10,
+     "Tail lights"
+    ],
+    [
+     11,
+     "TAIL",
+     10,
+     "Tail lights"
+    ],
+    [
+     12,
+     "P/SEAT LH",
+     30,
+     "Passenger power seat"
+    ],
+    [
+     13,
+     "4WD",
+     7.5,
+     "4WD system"
+    ],
+    [
+     14,
+     "AC INV",
+     15,
+     "100 V accessory socket"
+    ],
+    [
+     15,
+     "DR LOCK",
+     30,
+     "Body ECU (door locks)"
+    ],
+    [
+     16,
+     "P/W FL",
+     20,
+     "Power window"
+    ],
+    [
+     17,
+     "S/R",
+     20,
+     "Sunroof"
+    ],
+    [
+     18,
+     "PSD LH",
+     30,
+     "Power sliding door, left"
+    ],
+    [
+     19,
+     "P/W RL",
+     20,
+     "Power window"
+    ],
+    [
+     20,
+     "PBD",
+     30,
+     "Power tailgate"
+    ]
+   ]
+  }
+ ]
+}

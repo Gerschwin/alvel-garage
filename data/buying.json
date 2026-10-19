@@ -1,0 +1,53 @@
+{
+  "src": ["club-buying", "gov-mot"],
+  "sections": [
+    { "title": "Paperwork", "items": [
+      "Logbook (V5C): number of keepers, and whether it's a fresh import",
+      "MOT history on GOV.UK: advisories and failures",
+      "Proof the import duty and VAT were paid",
+      "Japanese auction sheet: grade and damage map. 'R' or 'RA' means accident repair. Doctored sheets do exist.",
+      "Frame number for a Japanese history report (e.g. CarVX): auctions, mileage readings, accidents",
+      "Service records and stickers (Japanese stickers use Japanese dates)",
+      "Outstanding recalls"
+    ]},
+    { "title": "Outside", "items": [
+      "Paint faults, dents and mismatched panels. Compare with the auction sheet.",
+      "Both sliding doors open and close smoothly, under power and by hand",
+      "Tailgate closes fully; power/soft-close works",
+      "Sunroof works, seals not cracked",
+      "Headlights not yellowed; every bulb works",
+      "Wheels: no bubbling or kerb damage; tyre age, tread, and summer or winter tyres",
+      "Spare tyre present",
+      "Underside: damage and corrosion. Ask why if it's been freshly undersealed.",
+      "Brake disc lips and pad thickness"
+    ]},
+    { "title": "Engine bay", "items": [
+      "Rust on strut tops and painted metal",
+      "Oil or fluid leaks; split or perished hoses; white crust at hose ends (coolant leaks)",
+      "Oil golden to dark brown, not black or sludgy; clean filler cap",
+      "Coolant pink/red and clean",
+      "Battery secure; health indicator (if fitted) shows good",
+      "Brake and power steering fluid levels",
+      "Engine running: no ticking, grinding or belt squeal"
+    ]},
+    { "title": "Inside", "items": [
+      "Seats fold, slide and recline (power ottomans on higher grades); no tears or burns",
+      "Smells: smoking or damp, possibly masked",
+      "Seatbelts and trim all present; floor mats",
+      "Speedometer shows mph (converted or overlaid)",
+      "Radio band expander fitted and working",
+      "Sat-nav/touchscreen, cameras, rear DVD screen (if fitted)",
+      "Front and rear air conditioning both blow cold",
+      "All windows, central locking, mirrors, sunshades, interior lights",
+      "Window tint not bubbled; check it's legal for the front windows in the UK"
+    ]},
+    { "title": "Test drive", "items": [
+      "At least two keys",
+      "Drives straight and doesn't pull under braking",
+      "Smooth gear changes / CVT with no judder or jolts",
+      "No knocks over bumps; nothing from the rear axle",
+      "No clicking from the CV joints on full lock",
+      "Steering and brakes feel right; no warning lights"
+    ]}
+  ]
+}
