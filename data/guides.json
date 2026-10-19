@@ -414,5 +414,128 @@
       "om-201209"
     ],
     "conf": "community"
+  },
+  {
+    "id": "factory-nav",
+    "title": "Factory sat-nav in English: settings, Bluetooth, maintenance reminders",
+    "difficulty": 1,
+    "time": "15 min",
+    "tools": [
+      "The car on (engine running or power ON), parked"
+    ],
+    "parts": [],
+    "steps": [
+      "Switch the screen to English: press the 設定・編集 (Setup/Edit) button beside the screen → touch 共通設定 (Common settings) → 言語設定 (Language) → English → OK. Menus and voice guidance change to English, though not every screen or message does.",
+      "Clear the previous owner's data: 設定・編集 → 共通設定 → 個人情報初期化 (Reset personal data) → 初期化する (Reset). This wipes the route history, saved places, paired phones, maintenance settings and recorded music.",
+      "Pair a phone: 設定・編集 → Bluetooth → 機器登録 (Register device) → 新規登録 (New registration). With that screen showing, choose the car's name in your phone's Bluetooth list and enter the passkey shown (most modern phones just ask you to confirm). Up to 5 phones. The phone needs the hands-free (HFP) profile.",
+      "Pair for music streaming: 設定・編集 → Bluetooth → 機器登録 → 新規登録, the same way. A phone can be registered for calls and audio at once.",
+      "Set service reminders (in km): 設定・編集 → メンテナンス (Maintenance) → 項目設定 (Set items) → pick an item (e.g. engine oil) → お知らせ日 (reminder date) and/or お知らせ距離 (reminder distance) → enter the value → 完了 (Done). Reminders only appear if automatic notification is turned on in the maintenance detail settings.",
+      "Change audio source: press the オーディオ (Audio) button. Each press cycles AM → FM → DISC → HDD → USB/iPod → BT → VTR → TV.",
+      "Store a radio station: tune with the TUNE knob, then hold a preset button on screen until it beeps.",
+      "If the unit freezes or goes very slow, hold the power/volume knob for 5 seconds to restart it."
+    ],
+    "table": {
+      "title": "Japanese button and menu names",
+      "cols": [
+        "On screen",
+        "Meaning"
+      ],
+      "rows": [
+        [
+          "設定・編集",
+          "Setup / Edit (main settings button)"
+        ],
+        [
+          "共通設定",
+          "Common (general) settings"
+        ],
+        [
+          "言語設定",
+          "Language setting"
+        ],
+        [
+          "個人情報初期化",
+          "Reset personal data"
+        ],
+        [
+          "現在地",
+          "Current position (map)"
+        ],
+        [
+          "目的地",
+          "Destination"
+        ],
+        [
+          "自宅に帰る",
+          "Go home"
+        ],
+        [
+          "オーディオ",
+          "Audio"
+        ],
+        [
+          "音量設定",
+          "Volume settings"
+        ],
+        [
+          "画面調整",
+          "Screen adjustment"
+        ],
+        [
+          "Bluetooth / 機器登録",
+          "Bluetooth / register device"
+        ],
+        [
+          "新規登録",
+          "New registration"
+        ],
+        [
+          "メンテナンス",
+          "Maintenance reminders"
+        ],
+        [
+          "車両",
+          "Vehicle (car customisation settings)"
+        ],
+        [
+          "完了",
+          "Done"
+        ],
+        [
+          "はい / いいえ",
+          "Yes / No"
+        ],
+        [
+          "する / しない",
+          "On / Off"
+        ],
+        [
+          "中止",
+          "Cancel"
+        ],
+        [
+          "戻る",
+          "Back"
+        ],
+        [
+          "修正",
+          "Correct / edit"
+        ]
+      ]
+    },
+    "notes": [
+      "This covers Toyota's factory-fitted (maker-option) HDD sat-nav from the Sept 2012 manual. Earlier units and dealer-fit or aftermarket screens have different menus, though the Japanese words are often the same.",
+      "The maps cover Japan only, so the nav won't route you in the UK. Japan-only services also won't work here: VICS traffic, the ETC toll unit, Japanese digital TV, and G-BOOK.",
+      "Vehicle customisation (設定・編集 → 車両) changes car settings such as lights and locks. Toyota says to do it with the engine running, so do it outdoors.",
+      "Before disconnecting the 12 V battery, switch the car off and give the nav a moment: it saves data to its hard drive when you switch off.",
+      "FM only covers the Japanese band (76–90 MHz) unless a band expander is fitted."
+    ],
+    "warnings": [
+      "Don't operate the screen while driving."
+    ],
+    "src": [
+      "navi-201209"
+    ],
+    "conf": "official"
   }
 ]

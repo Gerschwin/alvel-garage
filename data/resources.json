@@ -19,6 +19,11 @@
           "name": "DENSO spark plug fitment table",
           "url": "https://am.denso.com/search/plug/4wplug/4wjp_data.cgi?name=%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%89&filename=maker6jpn.txt&m=5",
           "what": "Genuine and DENSO plug numbers by build date."
+        },
+        {
+          "name": "Toyota factory sat-nav manual (2012 edition, PDF)",
+          "url": "https://manual.toyota.jp/pdf/vellfire/vellfire_navi_201209.pdf",
+          "what": "The full manual for the maker-option HDD nav (688 pages, Japanese). The guide 'Factory sat-nav in English' summarises the useful parts."
         }
       ]
     },

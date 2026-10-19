@@ -286,5 +286,12 @@
     "url": "",
     "kind": "community",
     "note": "Prices are planning estimates from AI-assisted research and haven't been individually checked."
+  },
+  {
+    "id": "navi-201209",
+    "title": "Toyota – Alphard/Vellfire maker-option HDD navigation manual, Sept 2012 edition (Japanese PDF, 688 pages)",
+    "url": "https://manual.toyota.jp/pdf/vellfire/vellfire_navi_201209.pdf",
+    "kind": "official",
+    "note": "Same file as alphard_navi_201209.pdf. Language setting p.40, personal data reset p.39, maintenance reminders p.162, Bluetooth phone p.480, Bluetooth audio p.312, radio p.212."
   }
 ]

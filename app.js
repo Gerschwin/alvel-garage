@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION = '0.4.0';
+const APP_VERSION = '0.4.1';
 const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'camper', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);
@@ -256,7 +256,7 @@ function buildIndex() {
   D.guides.filter(applies).forEach(g => index.push({ t: g.title, s: 'Guide · ' + g.steps.join(' '), h: '#/guides/' + g.id }));
   D.faults.filter(applies).forEach(f => index.push({ t: f.title, s: 'Fault · ' + f.symptoms + ' ' + f.cause, h: '#/faults' }));
   D.schedule.items.filter(applies).forEach(i => index.push({ t: i.task, s: 'Service schedule', h: '#/service' }));
-  D.guides.filter(applies).forEach(g => g.table && g.table.rows.forEach(r => index.push({ t: `${g.table.title}: pin ${r[0]}`, s: r.slice(1).join(' · '), h: '#/guides/' + g.id })));
+  D.guides.filter(applies).forEach(g => g.table && g.table.rows.forEach(r => index.push({ t: `${r[0]} (${g.table.title})`, s: r.slice(1).join(' · '), h: '#/guides/' + g.id })));
   [...D.auction.overall.map(r => ['Auction grade ' + r[0], r[1]]), ...D.auction.damage.map(r => ['Auction code ' + r[0], r[1]]), ...D.auction.abbrev.map(r => ['Auction sheet ' + r[0], r[1]])].forEach(([t, x]) => index.push({ t, s: x, h: '#/auction' }));
   D.vehicles.grades.rows.forEach(r => index.push({ t: `${r.alphard} / ${r.vellfire}`, s: 'Grade · ' + r.what, h: '#/grades' }));
   D.camper.parts.forEach(p => index.push({ t: p[0], s: 'Camper kit · ' + p[1] + ' ' + p[2], h: '#/camper' }));
@@ -289,6 +289,8 @@ function setCar(code) {
 
 // ---- events ----
 document.addEventListener('click', e => {
+  const hit = e.target.closest('a.hit');
+  if (hit && hit.getAttribute('href') === location.hash) { e.preventDefault(); route(); return; }
   const b = e.target.closest('[data-act]');
   if (!b) return;
   const act = b.dataset.act;
