@@ -61,3 +61,11 @@ dialog::backdrop{background:rgba(0,0,0,.45)}
 .hit{display:block;text-decoration:none;color:var(--ink)} .hit small{color:var(--muted)}
 .decoded{margin-top:10px}
 .foot{color:var(--muted);font-size:.8rem;margin-top:24px}
+
+.fig{margin:10px 0 4px}
+.fig-btn{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:10px;background:#FFFFFF;cursor:zoom-in;overflow:hidden}
+.fig img{display:block;width:100%;height:auto}
+.fig figcaption{color:var(--muted);font-size:.85rem;margin-top:4px}
+.photo-wanted{margin:8px 0 2px;padding:8px 10px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:.85rem}
+dialog.zoom{max-width:min(96vw,900px);width:96vw;padding:10px}
+dialog.zoom img{display:block;width:100%;height:auto;background:#FFFFFF;border-radius:8px}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>Fitting a new spin-on oil filter</title>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2F6FB3"/></marker></defs>
+  <rect width="400" height="300" fill="#FFFFFF"/>
+  <!-- filter body -->
+  <path d="M50 78 L170 78 L170 252 Q170 272 150 272 L70 272 Q50 272 50 252 Z" fill="#2F6FB3" stroke="#1B2430" stroke-width="2.5"/>
+  <g stroke="#1B4F86" stroke-width="3"><line x1="66" y1="110" x2="66" y2="250"/><line x1="86" y1="110" x2="86" y2="250"/><line x1="106" y1="110" x2="106" y2="250"/><line x1="126" y1="110" x2="126" y2="250"/><line x1="146" y1="110" x2="146" y2="250"/></g>
+  <!-- base plate + seal -->
+  <ellipse cx="110" cy="78" rx="60" ry="14" fill="#B9C3CE" stroke="#1B2430" stroke-width="2"/>
+  <ellipse cx="110" cy="76" rx="48" ry="10" fill="none" stroke="#1B2430" stroke-width="7"/>
+  <ellipse cx="110" cy="76" rx="48" ry="10" fill="none" stroke="#D69E2E" stroke-width="3"/>
+  <ellipse cx="110" cy="78" rx="12" ry="4" fill="#1B2430"/>
+  <!-- rotation arrow (clockwise viewed from below = tightening) -->
+  <path d="M44 58 Q110 30 176 58" fill="none" stroke="#2F6FB3" stroke-width="3" marker-end="url(#a)"/>
+  <text x="14" y="24" font-size="13" fill="#2F6FB3" font-weight="600">Clockwise to tighten (seen from below)</text>
+  <line x1="172" y1="72" x2="196" y2="72" stroke="#1B2430" stroke-width="1.5"/>
+  <text x="200" y="77" font-size="14" fill="#1B2430" font-weight="700">Rubber seal</text>
+  <!-- steps -->
+  <g font-size="14" fill="#1B2430">
+    <text x="200" y="118"><tspan font-weight="700">1</tspan>  Wipe the engine's</text>
+    <text x="214" y="135">mounting face clean</text>
+    <text x="200" y="164"><tspan font-weight="700">2</tspan>  Smear clean oil</text>
+    <text x="214" y="181">on the rubber seal</text>
+    <text x="200" y="210"><tspan font-weight="700">3</tspan>  Screw on by hand until</text>
+    <text x="214" y="227">the seal just touches</text>
+    <text x="200" y="256"><tspan font-weight="700">4</tspan>  Then about ¾ turn</text>
+    <text x="214" y="273">more, by hand only</text>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION = '0.4.1';
+const APP_VERSION = '0.5.0';
 const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'camper', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);
@@ -95,7 +95,7 @@ const views = {
         ${g.warnings?.length ? g.warnings.map(w => `<div class="warn">${esc(w)}</div>`).join('') : ''}
         <div class="card"><h3>Tools</h3><ul>${g.tools.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
         ${g.parts.length ? `<h3>Parts</h3><ul>${g.parts.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}</div>
-        <div class="card"><h3>Steps</h3><ol class="steps">${g.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol></div>
+        <div class="card"><h3>Steps</h3><ol class="steps">${g.steps.map(stepHtml).join('')}</ol></div>
         ${g.table ? `<div class="card"><h3>${esc(g.table.title)}</h3><table><tr>${g.table.cols.map(c => `<th>${esc(c)}</th>`).join('')}</tr>${g.table.rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</table></div>` : ''}
         ${g.notes?.length ? `<div class="card"><h3>Notes</h3><ul>${g.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` : ''}
         <p><a class="btn" href="#/mycar?task=${encodeURIComponent(guideTask(g.id))}">Log this job</a></p>`;
@@ -188,6 +188,14 @@ const views = {
       `<p class="foot">Toyota Japan has online manuals only from April 2010. For an earlier car (May 2008 – Mar 2010), a paper manual from the glovebox is the best check.</p>`;
   }
 };
+// A guide step is either plain text or { text, img: [{ src, alt, caption }], photo: 'what photo is wanted' }
+const stepText = s => typeof s === 'string' ? s : s.text;
+function stepHtml(s) {
+  if (typeof s === 'string') return `<li>${esc(s)}</li>`;
+  const figs = (s.img || []).map(i => `<figure class="fig"><button type="button" class="fig-btn" data-act="zoom" data-src="${esc(i.src)}" data-cap="${esc(i.caption || i.alt)}" aria-label="Enlarge: ${esc(i.alt)}"><img src="${esc(i.src)}" alt="${esc(i.alt)}" loading="lazy"></button>${i.caption ? `<figcaption>${esc(i.caption)}</figcaption>` : ''}</figure>`).join('');
+  const wanted = s.photo ? `<div class="photo-wanted">📷 Photo wanted: ${esc(s.photo)}</div>` : '';
+  return `<li>${esc(s.text)}${figs}${wanted}</li>`;
+}
 const tile = (href, t, s) => `<a class="tile" href="${href}"><b>${t}</b><span>${s}</span></a>`;
 const guideTask = id => (D.schedule.items.find(i => i.guide === id) || {}).task || (D.guides.find(g => g.id === id) || {}).title || '';
 
@@ -253,7 +261,7 @@ function buildIndex() {
   D.specs.groups.forEach(g => g.items.forEach(it => it.rows.forEach(r => applies(r) && index.push({ t: it.label, s: r.value, h: '#/specs' }))));
   D.parts.parts.filter(applies).forEach(p => index.push({ t: p.item, s: p.number, h: '#/parts' }));
   D.fuses.boxes.filter(applies).forEach(b => b.fuses.forEach(f => index.push({ t: `Fuse ${f[1]} (${f[2]} A)`, s: `${b.name} #${f[0]}: ${f[3]}`, h: '#/fuses' })));
-  D.guides.filter(applies).forEach(g => index.push({ t: g.title, s: 'Guide · ' + g.steps.join(' '), h: '#/guides/' + g.id }));
+  D.guides.filter(applies).forEach(g => index.push({ t: g.title, s: 'Guide · ' + g.steps.map(stepText).join(' '), h: '#/guides/' + g.id }));
   D.faults.filter(applies).forEach(f => index.push({ t: f.title, s: 'Fault · ' + f.symptoms + ' ' + f.cause, h: '#/faults' }));
   D.schedule.items.filter(applies).forEach(i => index.push({ t: i.task, s: 'Service schedule', h: '#/service' }));
   D.guides.filter(applies).forEach(g => g.table && g.table.rows.forEach(r => index.push({ t: `${r[0]} (${g.table.title})`, s: r.slice(1).join(' · '), h: '#/guides/' + g.id })));
@@ -295,6 +303,7 @@ document.addEventListener('click', e => {
   if (!b) return;
   const act = b.dataset.act;
   if (act === 'setCar') setCar(b.dataset.code);
+  if (act === 'zoom') { $('#zoomImg').src = b.dataset.src; $('#zoomImg').alt = b.dataset.cap; $('#zoomCap').textContent = b.dataset.cap; $('#zoomDlg').showModal(); }
   if (act === 'clearTicks') { store.set('buyTicks', {}); route(); }
   if (act === 'saveOdo') { const v = parseInt($('#odo').value, 10); store.set('odo', v > 0 ? v : null); route(); }
   if (act === 'addLog') {

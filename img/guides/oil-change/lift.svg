@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>Raising the front safely on ramps</title>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1B2430"/></marker></defs>
+  <rect width="400" height="300" fill="#FFFFFF"/>
+  <!-- ground -->
+  <line x1="10" y1="210" x2="390" y2="210" stroke="#5D6B7A" stroke-width="2"/>
+  <g stroke="#5D6B7A" stroke-width="1.5">
+    <line x1="20" y1="210" x2="10" y2="220"/><line x1="60" y1="210" x2="50" y2="220"/><line x1="100" y1="210" x2="90" y2="220"/><line x1="140" y1="210" x2="130" y2="220"/><line x1="180" y1="210" x2="170" y2="220"/><line x1="220" y1="210" x2="210" y2="220"/><line x1="260" y1="210" x2="250" y2="220"/><line x1="300" y1="210" x2="290" y2="220"/><line x1="340" y1="210" x2="330" y2="220"/><line x1="380" y1="210" x2="370" y2="220"/>
+  </g>
+  <!-- ramp -->
+  <polygon points="222,210 248,174 322,174 334,210" fill="#E8EDF2" stroke="#1B2430" stroke-width="2"/>
+  <!-- van body (facing right, front raised slightly) -->
+  <g transform="rotate(-4 200 150)">
+    <path d="M40 176 L40 92 Q40 70 64 66 L250 60 Q282 60 300 84 L332 120 Q342 132 342 148 L342 176 Z" fill="#E8EDF2" stroke="#1B2430" stroke-width="2.5"/>
+    <path d="M62 80 L150 76 L150 112 L62 114 Z" fill="#FFFFFF" stroke="#1B2430" stroke-width="2"/>
+    <path d="M162 76 L246 72 Q268 72 282 92 L298 112 L162 112 Z" fill="#FFFFFF" stroke="#1B2430" stroke-width="2"/>
+  </g>
+  <!-- wheels -->
+  <circle cx="96" cy="186" r="24" fill="#1B2430"/><circle cx="96" cy="186" r="10" fill="#B9C3CE"/>
+  <circle cx="286" cy="150" r="24" fill="#1B2430"/><circle cx="286" cy="150" r="10" fill="#B9C3CE"/>
+  <!-- chock -->
+  <polygon points="50,210 66,190 74,210" fill="#A23B2A"/>
+  <!-- labels -->
+  <text x="200" y="26" font-size="16" font-weight="700" fill="#1B2430" text-anchor="middle">Handbrake on · P selected · engine off</text>
+  <text x="300" y="246" font-size="15" fill="#1B2430" text-anchor="middle">Ramps under the</text>
+  <text x="300" y="263" font-size="15" fill="#1B2430" text-anchor="middle">front wheels</text>
+  <line x1="300" y1="232" x2="292" y2="200" stroke="#1B2430" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="62" y="246" font-size="15" fill="#A23B2A" text-anchor="middle" font-weight="600">Chock the</text>
+  <text x="62" y="263" font-size="15" fill="#A23B2A" text-anchor="middle" font-weight="600">rear wheels</text>
+  
+  <text x="200" y="292" font-size="13" fill="#5D6B7A" text-anchor="middle">Level, solid ground. Never rely on a jack alone.</text>
+</svg>

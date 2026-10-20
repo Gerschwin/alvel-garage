@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>Draining the sump</title>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1B2430"/></marker></defs>
+  <rect width="400" height="320" fill="#FFFFFF"/>
+  <!-- sump -->
+  <path d="M40 30 L270 30 L270 112 Q270 132 250 132 L60 132 Q40 132 40 112 Z" fill="#E8EDF2" stroke="#1B2430" stroke-width="2.5"/>
+  <path d="M42 92 L268 92 L268 112 Q268 130 250 130 L60 130 Q42 130 42 112 Z" fill="#D69E2E" opacity=".85"/>
+  <text x="70" y="64" font-size="16" font-weight="700" fill="#1B2430">Sump (oil pan)</text>
+  <!-- drain plug -->
+  <rect x="226" y="132" width="20" height="12" fill="#1B2430"/>
+  <!-- undo arrow -->
+  <path d="M252 156 A22 10 0 1 1 210 156" fill="none" stroke="#2F6FB3" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="200" y="160" font-size="14" fill="#2F6FB3" font-weight="600" text-anchor="end">Undo</text>
+  <text x="200" y="176" font-size="14" fill="#2F6FB3" font-weight="600" text-anchor="end">anticlockwise</text>
+  <!-- oil stream -->
+  <path d="M244 144 Q300 160 312 238" fill="none" stroke="#D69E2E" stroke-width="7" stroke-linecap="round"/>
+  <!-- tray -->
+  <path d="M262 240 L370 240 L360 270 L272 270 Z" fill="#E8EDF2" stroke="#1B2430" stroke-width="2"/>
+  <path d="M268 248 L364 248 L360 262 L272 262 Z" fill="#D69E2E" opacity=".6"/>
+  <text x="316" y="291" font-size="13" fill="#5D6B7A" text-anchor="middle">Oil arcs out sideways:</text>
+  <text x="316" y="308" font-size="13" fill="#5D6B7A" text-anchor="middle">set the tray off to one side</text>
+  <!-- exploded plug + washer -->
+  <g transform="translate(70 214)">
+    <rect x="0" y="0" width="34" height="18" rx="2" fill="#1B2430"/>
+    <rect x="9" y="18" width="16" height="26" fill="#5D6B7A"/>
+    <g stroke="#FFFFFF" stroke-width="1.5"><line x1="9" y1="24" x2="25" y2="22"/><line x1="9" y1="30" x2="25" y2="28"/><line x1="9" y1="36" x2="25" y2="34"/></g>
+    <ellipse cx="17" cy="-12" rx="20" ry="5" fill="none" stroke="#A23B2A" stroke-width="4"/>
+  </g>
+  <text x="120" y="204" font-size="14" fill="#A23B2A" font-weight="700">New crush washer</text>
+  <text x="120" y="221" font-size="14" fill="#A23B2A" font-weight="700">every time</text>
+  <text x="120" y="244" font-size="13" fill="#1B2430">Refit snug. Don't</text>
+  <text x="120" y="260" font-size="13" fill="#1B2430">over-tighten: the</text>
+  <text x="120" y="276" font-size="13" fill="#1B2430">sump is aluminium</text>
+</svg>

@@ -22,14 +22,57 @@
     ],
     "steps": [
       "Run the engine for a few minutes so the oil is warm, not hot. Park on level ground, handbrake on, engine off.",
-      "Raise the front on ramps, or jack it up at the proper lifting point and support it on axle stands. Never work under it on the jack alone.",
-      "Take the oil filler cap off so the oil drains freely.",
-      "Put the tray under the sump, undo the drain plug and let it drain fully (10 minutes or so).",
+      {
+        "text": "Raise the front on ramps, or jack it up at the proper lifting point and support it on axle stands. Never work under it on the jack alone.",
+        "img": [
+          {
+            "src": "img/guides/oil-change/lift.svg",
+            "alt": "Van with front wheels on ramps, rear wheels chocked",
+            "caption": "Illustration. On the ANH20, check the owner's manual for lift points."
+          }
+        ]
+      },
+      {
+        "text": "Take the oil filler cap off so the oil drains freely.",
+        "photo": "the ANH20 2.4 engine bay showing the oil filler cap and dipstick"
+      },
+      {
+        "text": "Put the tray under the sump, undo the drain plug and let it drain fully (10 minutes or so).",
+        "img": [
+          {
+            "src": "img/guides/oil-change/drain.svg",
+            "alt": "Sump cross-section showing the drain plug being undone and oil arcing into a tray",
+            "caption": "Illustration, not to scale."
+          }
+        ],
+        "photo": "the underside of an ANH20, showing where the drain plug is"
+      },
       "Clean the plug, fit a new washer, and refit it firmly. Don't over-tighten into the aluminium sump.",
-      "Move the tray under the filter and unscrew it. Some oil will run out.",
-      "Wipe the filter mounting face. Smear clean oil on the new filter's rubber seal, screw it on until the seal touches, then about another ¾ turn by hand.",
+      {
+        "text": "Move the tray under the filter and unscrew it. Some oil will run out.",
+        "photo": "where the oil filter sits on the 2AZ-FE, and the best access (from above or below)"
+      },
+      {
+        "text": "Wipe the filter mounting face. Smear clean oil on the new filter's rubber seal, screw it on until the seal touches, then about another ¾ turn by hand.",
+        "img": [
+          {
+            "src": "img/guides/oil-change/filter.svg",
+            "alt": "Spin-on oil filter with its rubber seal highlighted and fitting steps",
+            "caption": "Illustration of a typical spin-on filter."
+          }
+        ]
+      },
       "Lower the car so it's level. Pour in about 3.8 L, wait a minute, then check the dipstick.",
-      "Top up a little at a time towards 4.3 L until the level is near the top mark. Don't overfill.",
+      {
+        "text": "Top up a little at a time towards 4.3 L until the level is near the top mark. Don't overfill.",
+        "img": [
+          {
+            "src": "img/guides/oil-change/dipstick.svg",
+            "alt": "Dipstick showing F and L marks with the oil film ending between them",
+            "caption": "Illustration. Your dipstick's marks may be holes or notches."
+          }
+        ]
+      },
       "Refit the filler cap. Start the engine and let it idle for a minute; the oil light should go out within seconds. Look for leaks at the plug and filter.",
       "Switch off, wait at least 5 minutes, then re-check the dipstick and top up if needed.",
       "Reset the maintenance reminder if one is set, and log it in My Car."

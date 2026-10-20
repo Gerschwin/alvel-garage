@@ -49,3 +49,18 @@ When you change any file, bump `APP_VERSION` in `app.js` and `VERSION` in `sw.js
 - **Stud pattern, oil filter number:** not yet confirmed from a Toyota parts catalogue.
 - **2008/05 – 2010/03 cars:** no online manual, so the paper glovebox manual is the check.
 - **Not yet in the app:** warning-light meanings, the jacking-point diagram, timing-chain/drive-belt info, and photos.
+
+## Pictures in guides
+
+A guide step can be plain text, or an object with images and a photo request:
+
+```json
+{ "text": "Undo the drain plug…",
+  "img": [{ "src": "img/guides/oil-change/drain.svg", "alt": "…", "caption": "Illustration, not to scale." }],
+  "photo": "the underside of an ANH20, showing where the drain plug is" }
+```
+
+- `img`: shown under the step. Tap one to enlarge it.
+- `photo`: shows a "📷 Photo wanted" box until a real photo is added.
+
+Put images in `img/guides/<guide-id>/` and list them in `CORE` in `sw.js` so they work offline. Only use original diagrams or our own photos, since the site is public. Shrink photos to about 1200 px wide (JPEG or WebP) before adding them.
