@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>Opening the smart key and fitting a CR1632 cell</title>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1B2430"/></marker></defs>
+  <rect width="400" height="240" fill="#FFFFFF"/>
+  <!-- key halves -->
+  <rect x="24" y="40" width="110" height="150" rx="28" fill="#1B2430"/>
+  <rect x="150" y="40" width="110" height="150" rx="28" fill="#5D6B7A"/>
+  <!-- mechanical key blade -->
+  <rect x="60" y="190" width="14" height="40" fill="#B9C3CE" stroke="#5D6B7A"/>
+  <path d="M67 190 V218" stroke="#5D6B7A"/>
+  <text x="84" y="226" font-size="12" fill="#1B2430">1 Slide out the key blade</text>
+  <!-- slot + screwdriver -->
+  <path d="M262 44 L222 96" stroke="#A23B2A" stroke-width="6" stroke-linecap="round"/>
+  <rect x="256" y="34" width="14" height="14" rx="3" fill="#F2C200" transform="rotate(-36 263 41)"/>
+  
+  <!-- coin cell -->
+  <circle cx="205" cy="128" r="32" fill="#B9C3CE" stroke="#1B2430" stroke-width="2"/>
+  <text x="205" y="124" font-size="20" text-anchor="middle" font-weight="700" fill="#1B2430">+</text>
+  <text x="205" y="144" font-size="11" text-anchor="middle" fill="#1B2430">CR1632</text>
+  <g font-size="13" fill="#1B2430">
+    <text x="276" y="84" font-weight="700">2 Prise apart</text>
+    <text x="276" y="100">at the slot (tape</text>
+    <text x="276" y="116">on the blade tip)</text>
+    <text x="276" y="144" font-weight="700">3 New CR1632,</text>
+    <text x="276" y="160" font-weight="700">+ side up</text>
+    <text x="276" y="188">4 Clip together,</text>
+    <text x="276" y="204">press a button:</text>
+    <text x="276" y="220">the LED lights</text>
+  </g>
+  <text x="200" y="20" font-size="11" fill="#5D6B7A" text-anchor="middle">Illustration: the real key's shape and slot position differ</text>
+</svg>

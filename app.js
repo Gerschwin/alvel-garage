@@ -1,5 +1,5 @@
 'use strict';
-const APP_VERSION = '0.5.0';
+const APP_VERSION = '0.5.1';
 const FILES = ['vehicles', 'specs', 'parts', 'schedule', 'fuses', 'guides', 'faults', 'buying', 'auction', 'camper', 'resources', 'sources'];
 const D = {};
 const $ = s => document.querySelector(s);

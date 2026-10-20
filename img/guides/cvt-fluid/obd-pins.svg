@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 210" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>OBD socket pin numbers, pins 4 and 13 highlighted</title>
+  <rect width="400" height="210" fill="#FFFFFF"/>
+  <text x="200" y="24" font-size="14" font-weight="700" fill="#1B2430" text-anchor="middle">OBD socket under the dash, looking at its face</text>
+  <path d="M40 50 H362 L346 140 H56 Z" fill="#1B2430"/>
+  <g font-size="12" text-anchor="middle" font-weight="700">
+    <g fill="#5D6B7A">
+      <rect x="64" y="64" width="22" height="24" rx="3"/><rect x="100" y="64" width="22" height="24" rx="3"/><rect x="136" y="64" width="22" height="24" rx="3"/>
+      <rect x="208" y="64" width="22" height="24" rx="3"/><rect x="244" y="64" width="22" height="24" rx="3"/><rect x="280" y="64" width="22" height="24" rx="3"/><rect x="316" y="64" width="22" height="24" rx="3"/>
+      <rect x="64" y="102" width="22" height="24" rx="3"/><rect x="100" y="102" width="22" height="24" rx="3"/><rect x="136" y="102" width="22" height="24" rx="3"/><rect x="172" y="102" width="22" height="24" rx="3"/>
+      <rect x="244" y="102" width="22" height="24" rx="3"/><rect x="280" y="102" width="22" height="24" rx="3"/><rect x="316" y="102" width="22" height="24" rx="3"/>
+    </g>
+    <rect x="172" y="64" width="22" height="24" rx="3" fill="#D69E2E"/>
+    <rect x="208" y="102" width="22" height="24" rx="3" fill="#D69E2E"/>
+    <g fill="#FFFFFF">
+      <text x="75" y="81">1</text><text x="111" y="81">2</text><text x="147" y="81">3</text><text x="183" y="81" fill="#1B2430">4</text><text x="219" y="81">5</text><text x="255" y="81">6</text><text x="291" y="81">7</text><text x="327" y="81">8</text>
+      <text x="75" y="119">9</text><text x="111" y="119">10</text><text x="147" y="119">11</text><text x="183" y="119">12</text><text x="219" y="119" fill="#1B2430">13</text><text x="255" y="119">14</text><text x="291" y="119">15</text><text x="327" y="119">16</text>
+    </g>
+  </g>
+  <path d="M183 88 Q190 104 210 110" fill="none" stroke="#D69E2E" stroke-width="4"/>
+  <g font-size="13" fill="#1B2430">
+    <text x="20" y="166" font-weight="700">Bridge pin 4 (top row) to pin 13 (bottom row)</text>
+    <text x="20" y="184">only for the level check. Remove the wire straight after.</text>
+    <text x="20" y="202" fill="#5D6B7A" font-size="12">Pin 16 (bottom right) is always-live 12 V: keep the wire well away.</text>
+  </g>
+</svg>

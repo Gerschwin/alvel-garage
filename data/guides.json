@@ -110,14 +110,34 @@
     ],
     "steps": [
       "Get the car level and safely supported. The level check only works if the car is level.",
-      "Undo the 24 mm filler bolt first. If you drain it and then can't open the filler, you're stranded.",
+      {
+        "text": "Undo the 24 mm filler bolt first. If you drain it and then can't open the filler, you're stranded.",
+        "photo": "the CVT filler bolt, drain plug and overflow tube on the ANH20"
+      },
       "Remove the 6 mm hex drain plug and let it drain into the tray. Expect about 1.5 L at first.",
       "Undo the overflow tube inside the drain hole (also 6 mm hex). Another 0.5–1 L comes out. Roughly 2–4 L in total, which is only part of the 8.7 L in the system.",
       "Refit the overflow tube and drain plug, and fill with the same amount of new fluid through the filler hole.",
       "To change more of it: start the engine, move slowly through P-R-N-D with your foot on the brake, then drain and refill again. Repeat until the fluid coming out looks clean.",
-      "Level check, fluid must be 35–45 °C: start cold and slightly overfilled. With the ignition on and the A/C off, then ignition off, bridge OBD pins 4 and 13 with the wire.",
+      {
+        "text": "Level check, fluid must be 35–45 °C: start cold and slightly overfilled. With the ignition on and the A/C off, then ignition off, bridge OBD pins 4 and 13 with the wire.",
+        "img": [
+          {
+            "src": "img/guides/cvt-fluid/level-check.svg",
+            "alt": "Flowchart of the CVT level check and what the D light means",
+            "caption": "Summary of the level-check procedure."
+          },
+          {
+            "src": "img/guides/cvt-fluid/obd-pins.svg",
+            "alt": "OBD socket pin layout with pins 4 and 13 highlighted",
+            "caption": "Standard 16-pin OBD socket, seen from the front."
+          }
+        ]
+      },
       "Start the engine. Move the selector N→D→N→D quickly (under 1.5 s each) until the D light stays on for 2 s. That's fluid-temperature mode. Remove the jumper and go back to P.",
-      "D light off = too cold, wait. D light flashing = too hot, let it cool and start again. D light steady = in the window.",
+      {
+        "text": "D light off = too cold, wait. D light flashing = too hot, let it cool and start again. D light steady = in the window.",
+        "photo": "the OBD socket under the ANH20 dash"
+      },
       "With the D light steady and the engine running, remove the drain plug. Let the excess run out of the overflow tube until it just drips, then refit the plug with a new gasket. If nothing comes out, it's low: add fluid and redo the check.",
       "Refit the filler bolt with a new gasket. Test drive, and look for leaks."
     ],
@@ -146,7 +166,17 @@
     ],
     "steps": [
       "Slide out the mechanical key blade.",
-      "Gently prise the cover apart at the slot. The taped tip stops it scratching.",
+      {
+        "text": "Gently prise the cover apart at the slot. The taped tip stops it scratching.",
+        "img": [
+          {
+            "src": "img/guides/key-battery/key.svg",
+            "alt": "Smart key split open with a CR1632 cell, + side up",
+            "caption": "Illustration: your key's shape differs."
+          }
+        ],
+        "photo": "the ANH20 smart key opened, showing the slot and battery"
+      },
       "Take out the old cell and fit the new one + side up.",
       "Clip the cover back together and refit the blade.",
       "Press a button. The LED on the key should light."
@@ -172,8 +202,20 @@
     ],
     "steps": [
       "Turn the power switch off.",
-      "Find the right fuse in the Fuses section of this app. There are 2 boxes under the bonnet (3 on the hybrid) and one in each front footwell.",
-      "Pull the fuse with the puller and look at the metal link. A gap or blackening means it's blown.",
+      {
+        "text": "Find the right fuse in the Fuses section of this app. There are 2 boxes under the bonnet (3 on the hybrid) and one in each front footwell.",
+        "photo": "the engine bay fuse boxes A and B, and the two footwell fuse panels, with covers off"
+      },
+      {
+        "text": "Pull the fuse with the puller and look at the metal link. A gap or blackening means it's blown.",
+        "img": [
+          {
+            "src": "img/guides/fuse-check/fuse.svg",
+            "alt": "Good fuse with unbroken link, blown fuse with a gap, and fuse rating colours",
+            "caption": "Good vs blown, and the usual rating colours."
+          }
+        ]
+      },
       "Fit a fuse of exactly the same rating.",
       "If it blows again, there's a fault in that circuit. Get it looked at rather than fitting a bigger fuse."
     ],
@@ -199,9 +241,21 @@
       "Stop somewhere safe and level, hazards on, handbrake on, P selected. Get passengers out and well away from traffic.",
       "Chock the wheel diagonally opposite.",
       "Loosen the wheel nuts half a turn while the tyre is still on the ground.",
-      "Jack the car up at the correct jacking point (see the owner's manual diagram) until the tyre clears the ground.",
+      {
+        "text": "Jack the car up at the correct jacking point (see the owner's manual diagram) until the tyre clears the ground.",
+        "photo": "the ANH20 jacking points (front and rear) and where the spare wheel and jack are stowed"
+      },
       "Remove the nuts and the wheel. Fit the spare, then run the nuts on by hand, tapered side towards the wheel.",
-      "Lower the car and tighten the nuts in a criss-cross pattern to 103 N·m (76 lb·ft).",
+      {
+        "text": "Lower the car and tighten the nuts in a criss-cross pattern to 103 N·m (76 lb·ft).",
+        "img": [
+          {
+            "src": "img/guides/common/wheel-nuts.svg",
+            "alt": "Five-stud wheel showing the criss-cross tightening order 1 to 5",
+            "caption": "Criss-cross order, 103 N·m."
+          }
+        ]
+      },
       "Space-saver spare: 420 kPa (61 psi), keep to low speeds, and get the proper tyre refitted soon.",
       "Re-check the nut torque after a short drive."
     ],
@@ -227,13 +281,25 @@
       "Possibly a door cable or motor assembly"
     ],
     "steps": [
-      "Check the 12 V battery first. Low voltage is a common cause of power doors misbehaving. Charge it or test it (12.4 V or more at rest).",
+      {
+        "text": "Check the 12 V battery first. Low voltage is a common cause of power doors misbehaving. Charge it or test it (12.4 V or more at rest).",
+        "img": [
+          {
+            "src": "img/guides/sliding-door/fault-finder.svg",
+            "alt": "Flowchart for diagnosing a misbehaving power sliding door",
+            "caption": "Work down from the top."
+          }
+        ]
+      },
       "Check the PSD RH / PSD LH and ECU-B fuses (see Fuses).",
       "Try a reset: disconnect the battery negative for a minute, reconnect it, switch the power door main switch on, then open and close the door fully with the button.",
       "Listen while operating it. Motor runs but the door doesn't move → probably a broken cable. Silence from the motor → the motor, its wiring, or a fuse.",
       "Door stops partway or jams → often a worn outer sheath on the cable, binding in the pulley system, or dry runners.",
       "Clean the door runners and lightly grease them. Some owners also put silicone grease on the cable drum splines when refitting.",
-      "Cable replacement is a big job (owners report about 4 hours). Get the right part for your frame number and follow a video for your generation."
+      {
+        "text": "Cable replacement is a big job (owners report about 4 hours). Get the right part for your frame number and follow a video for your generation.",
+        "photo": "the door cable drum and motor with the trim off"
+      }
     ],
     "warnings": [
       "Keep hands clear of a power door. It can close with real force when it's re-learning its travel."
@@ -261,10 +327,16 @@
     "steps": [
       "Disconnect the battery negative if you'll be unplugging the audio or nav.",
       "Unscrew the gear knob.",
-      "Ease off the cluster panel around the gear lever. It's held by about 21 clips, so work round it gently with trim tools.",
+      {
+        "text": "Ease off the cluster panel around the gear lever. It's held by about 21 clips, so work round it gently with trim tools.",
+        "photo": "the gear-lever cluster panel coming off, showing where the clips are"
+      },
       "Unclip the air-con control panel (4 clips).",
       "Unclip the audio surround panel (9 clips).",
-      "Undo the 4 screws holding the audio bracket.",
+      {
+        "text": "Undo the 4 screws holding the audio bracket.",
+        "photo": "the four audio bracket screws once the panels are off"
+      },
       "Pull the audio unit and bracket forward and unplug it.",
       "Refit in reverse. Seat every clip fully before pressing the panels home."
     ],
@@ -393,7 +465,10 @@
       "Unclip the cover behind the interior door handle (3 hooks) and remove the screw behind it.",
       "Remove the screw under the door pull, then unclip the door grip (3 hooks).",
       "Unclip the power window switch panel (9 hooks) and unplug it.",
-      "Remove the last screw, then pop the trim off its 12 clips and lift it off the window ledge. Unplug anything still attached.",
+      {
+        "text": "Remove the last screw, then pop the trim off its 12 clips and lift it off the window ledge. Unplug anything still attached.",
+        "photo": "the front door card off, showing the clip positions"
+      },
       "The front speaker is riveted in: drill out the 4 rivets with a 5 mm bit (they can't be reused) and lift the speaker out.",
       "Rear sliding door: remove 1 screw, then unclip the trim (15 clips, 5 hooks). The speaker comes out after 3 screws.",
       "Refit in reverse. Secure the front speaker with new rivets or M5 screws and nuts."
@@ -428,9 +503,28 @@
     "steps": [
       "Open the bonnet and crack the brake fluid reservoir cap so fluid can rise freely when you push the pistons back. Watch it doesn't overflow.",
       "Loosen the wheel nuts, jack up the car, put it on axle stands and remove the wheel. Turn the steering out to give better access.",
-      "Undo the two caliper bolts (upper and lower, the ones with rubber boots behind them).",
+      {
+        "text": "Undo the two caliper bolts (upper and lower, the ones with rubber boots behind them).",
+        "img": [
+          {
+            "src": "img/guides/front-brakes/exploded.svg",
+            "alt": "Exploded view: disc, carrier, pads with clips, caliper and slide pins, with torques",
+            "caption": "Illustration of a typical sliding caliper."
+          }
+        ],
+        "photo": "the ANH20 front caliper from behind, with the two caliper bolts and two carrier bolts marked"
+      },
       "Alternative for pads only: remove just the lower bolt and swing the caliper up like a clam shell.",
-      "With the old inner pad still in place, push the piston back with the G-clamp.",
+      {
+        "text": "With the old inner pad still in place, push the piston back with the G-clamp.",
+        "img": [
+          {
+            "src": "img/guides/front-brakes/piston.svg",
+            "alt": "G-clamp pushing the caliper piston back, with the old pad in place",
+            "caption": "Illustration."
+          }
+        ]
+      },
       "Lift the caliper off and hang it on a hook or bungee. Never let it hang on the brake hose.",
       "Take out the pads and their clips. Pull out the slide pins, clean them and check the boots.",
       "If you're changing discs: undo the two carrier bolts (top and bottom) and remove the carrier.",
@@ -441,7 +535,16 @@
       "Fit the new pad clips (check which way they face), grease the pad ears lightly, and fit the pads the right way round.",
       "Grease the slide pins and refit them.",
       "Put a little grease where the caliper touches the pad backs, refit the caliper, and torque the two bolts to 34 N·m (25 lb·ft).",
-      "Clean the disc faces once more, refit the wheel and torque the nuts to 103 N·m.",
+      {
+        "text": "Clean the disc faces once more, refit the wheel and torque the nuts to 103 N·m.",
+        "img": [
+          {
+            "src": "img/guides/common/wheel-nuts.svg",
+            "alt": "Five-stud wheel showing the criss-cross tightening order 1 to 5",
+            "caption": "Criss-cross order, 103 N·m."
+          }
+        ]
+      },
       "Close the reservoir cap. Pump the brake pedal several times until it's firm BEFORE driving. The first presses go to the floor.",
       "Check the fluid level, then bed the pads in with a few gentle stops from 30 mph."
     ],
@@ -468,7 +571,10 @@
     ],
     "parts": [],
     "steps": [
-      "Switch the screen to English: press the 設定・編集 (Setup/Edit) button beside the screen → touch 共通設定 (Common settings) → 言語設定 (Language) → English → OK. Menus and voice guidance change to English, though not every screen or message does.",
+      {
+        "text": "Switch the screen to English: press the 設定・編集 (Setup/Edit) button beside the screen → touch 共通設定 (Common settings) → 言語設定 (Language) → English → OK. Menus and voice guidance change to English, though not every screen or message does.",
+        "photo": "the nav screen and the buttons beside it (設定・編集, オーディオ, 現在地)"
+      },
       "Clear the previous owner's data: 設定・編集 → 共通設定 → 個人情報初期化 (Reset personal data) → 初期化する (Reset). This wipes the route history, saved places, paired phones, maintenance settings and recorded music.",
       "Pair a phone: 設定・編集 → Bluetooth → 機器登録 (Register device) → 新規登録 (New registration). With that screen showing, choose the car's name in your phone's Bluetooth list and enter the passkey shown (most modern phones just ask you to confirm). Up to 5 phones. The phone needs the hands-free (HFP) profile.",
       "Pair for music streaming: 設定・編集 → Bluetooth → 機器登録 → 新規登録, the same way. A phone can be registered for calls and audio at once.",

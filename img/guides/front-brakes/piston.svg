@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>Pushing the caliper piston back with a G-clamp</title>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2F6FB3"/></marker></defs>
+  <rect width="400" height="260" fill="#FFFFFF"/>
+  <g font-size="13" fill="#1B2430">
+    <text x="20" y="26" font-weight="700">Leave the old pad in to protect the piston</text>
+    <text x="20" y="44">Crack the brake fluid cap first and</text>
+    <text x="20" y="60">watch it doesn't overflow</text>
+  </g>
+  <!-- G-clamp frame -->
+  <path d="M64 80 V200 H330 V80" fill="none" stroke="#5D6B7A" stroke-width="10" stroke-linejoin="round"/>
+  <!-- screw + foot -->
+  <rect x="58" y="112" width="40" height="10" fill="#5D6B7A"/>
+  <rect x="96" y="100" width="8" height="34" fill="#5D6B7A"/>
+  <!-- old pad -->
+  <rect x="104" y="80" width="10" height="74" fill="#1B2430"/>
+  <rect x="114" y="84" width="10" height="66" fill="#8A6A3A" stroke="#1B2430"/>
+  <!-- piston + caliper -->
+  <rect x="124" y="92" width="26" height="50" fill="#B9C3CE" stroke="#1B2430" stroke-width="2"/>
+  <path d="M150 74 h150 q16 0 16 16 v54 q0 16 -16 16 h-150 z" fill="#A23B2A" stroke="#1B2430" stroke-width="2"/>
+  <text x="232" y="122" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="700">Caliper</text>
+  <!-- push arrow -->
+  <path d="M60 232 H150" stroke="#2F6FB3" stroke-width="3" marker-end="url(#a)"/>
+  <text x="166" y="230" font-size="14" fill="#2F6FB3" font-weight="700">Wind in slowly until</text>
+  <text x="166" y="247" font-size="14" fill="#2F6FB3" font-weight="700">the piston is fully back</text>
+</svg>

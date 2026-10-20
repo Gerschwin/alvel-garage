@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+  <title>Wheel nut tightening order (5 studs)</title>
+  <rect width="400" height="300" fill="#FFFFFF"/>
+  <circle cx="140" cy="150" r="118" fill="#1B2430"/>
+  <circle cx="140" cy="150" r="96" fill="#E8EDF2" stroke="#5D6B7A" stroke-width="2"/>
+  <circle cx="140" cy="150" r="22" fill="#B9C3CE" stroke="#5D6B7A" stroke-width="2"/>
+  <path d="M140 92 L174.1 196.9 L84.8 132.1 L195.2 132.1 L105.9 196.9 Z" fill="none" stroke="#2F6FB3" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <g font-size="16" font-weight="700" text-anchor="middle">
+    <circle cx="140" cy="92" r="16" fill="#2F6FB3"/><text x="140" y="98" fill="#FFFFFF">1</text>
+    <circle cx="174.1" cy="196.9" r="16" fill="#2F6FB3"/><text x="174.1" y="202.9" fill="#FFFFFF">2</text>
+    <circle cx="84.8" cy="132.1" r="16" fill="#2F6FB3"/><text x="84.8" y="138.1" fill="#FFFFFF">3</text>
+    <circle cx="195.2" cy="132.1" r="16" fill="#2F6FB3"/><text x="195.2" y="138.1" fill="#FFFFFF">4</text>
+    <circle cx="105.9" cy="196.9" r="16" fill="#2F6FB3"/><text x="105.9" y="202.9" fill="#FFFFFF">5</text>
+  </g>
+  <g font-size="14" fill="#1B2430">
+    <text x="272" y="70" font-weight="700">Criss-cross order</text>
+    <text x="272" y="96">1 → 2 → 3 → 4 → 5</text>
+    <text x="272" y="130">Snug them all by</text>
+    <text x="272" y="147">hand first, then</text>
+    <text x="272" y="164">torque in order:</text>
+    <text x="272" y="196" font-size="20" font-weight="700" fill="#2F6FB3">103 N·m</text>
+    <text x="272" y="216">(76 lb·ft)</text>
+    <text x="272" y="250" fill="#5D6B7A" font-size="13">Re-check after</text>
+    <text x="272" y="266" fill="#5D6B7A" font-size="13">a few miles</text>
+  </g>
+</svg>
